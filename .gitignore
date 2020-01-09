@@ -1,0 +1,8 @@
+#Ignore files
+node_modules
+
+package-lock.json
+/app/css/bootstrap.min.css
+/app/css/normalize.min.css
+/app/js/bootstrap.min.js
+/app/js/normalize.min.js
