@@ -136,6 +136,9 @@ p {
   -webkit-box-align: center;
           align-items: center;
   border-bottom: 1px solid #ffffff;
+  margin-bottom: -56px;
+  position: relative;
+  z-index: 1;
 }
 
 .main-nav__logo {
@@ -179,8 +182,6 @@ p {
 .slider-header {
   width: 100%;
   overflow: hidden;
-  margin-top: -60px;
-  z-index: -1;
 }
 
 .slider-header img {

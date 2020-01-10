@@ -6,17 +6,17 @@
     max-width: 970px;
 }
 
-.main-header {
-    // background-color: $c-gray;
-}
+.main-header {}
 
 .main-nav {
-    // background-color: $c-gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $c-white;
+    margin-bottom: -56px;
+    position: relative;
+    z-index: 1;
 
     &__logo {
         font-size: 2.4rem;
@@ -60,8 +60,8 @@
 .slider-header {
     width: 100%;
     overflow: hidden;
-    margin-top: -60px;
-    z-index: -1;
+    // margin-top: -60px;
+    // z-index: -1;
 
     img {
         width: 100vw;
