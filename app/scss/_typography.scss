@@ -1,0 +1,106 @@
+@import "vars";
+
+
+
+html {
+    font-size: 16px;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media only screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+
+    font-weight: 400;
+    font-family: Vollkorn;
+}
+
+.c-mongoose {
+    color: $c-mongoose;
+}
+
+h1 {
+    font-family: Yesteryear;
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Yesteryear;
+    font-size: 3.8rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: Raleway;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.p-lite {
+    font-family: Vollkorn;
+    font-size: 0.9em;
+}
+
+.big-price {
+    font-family: Raleway;
+    font-size: 2.3rem;
+    color: $c-mongoose;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background: $c-mongoose;
+    background-color: $c-mongoose;
+    color: $c-black;
+    border-radius: initial;
+    font-family: Raleway;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin: 2rem 0;
+
+    &-transparent {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-black;
+        border: 1px solid $c-mongoose;
+        box-sizing: border-box;
+    }
+}
+
+.btn-small {
+    padding: 0.6rem 0.2rem;
+    background: $c-mongoose;
+    background-color: $c-mongoose;
+    color: $c-black;
+    border-radius: initial;
+    font-family: Raleway;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    margin: 2rem 0;
+}
