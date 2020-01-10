@@ -127,14 +127,10 @@ p {
   max-width: 970px;
 }
 
-.main-header {
-  background-color: #808080;
-}
-
 .main-nav {
-  background-color: #808080;
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
@@ -178,4 +174,22 @@ p {
 
 .main-nav__link-active:hover {
   color: #ffffff;
+}
+
+.slider-header {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -60px;
+  z-index: -1;
+}
+
+.slider-header img {
+  width: 100vw;
+  height: auto;
+}
+
+.slider-header__title {
+  position: relative;
+  top: -100px;
+  left: 100px;
 }

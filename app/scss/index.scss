@@ -7,12 +7,13 @@
 }
 
 .main-header {
-    background-color: $c-gray;
+    // background-color: $c-gray;
 }
 
 .main-nav {
-    background-color: $c-gray;
+    // background-color: $c-gray;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $c-white;
@@ -53,5 +54,23 @@
                 color: $c-white;
             }
         }
+    }
+}
+
+.slider-header {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -60px;
+    z-index: -1;
+
+    img {
+        width: 100vw;
+        height: auto;
+    }
+
+    &__title {
+        position: relative;
+        top: -100px;
+        left: 100px;
     }
 }
