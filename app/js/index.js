@@ -1,6 +1,10 @@
 $('.slider-header').slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
-    speed: 4000
+    edgeFriction: '1',
+    dots: true,
+    adaptiveHeight: true,
+    autoplaySpeed: 4000,
+    speed: 2000,
+    zIndex: 1
 });

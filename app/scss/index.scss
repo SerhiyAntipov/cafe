@@ -1,76 +1,83 @@
 @import "fonts";
 @import "media";
 @import "typography";
+@import "boorger-menu";
 
-.container {
-    max-width: 970px;
-}
-
-.main-header {}
-
-.main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $c-white;
-    margin-bottom: -56px;
-    position: relative;
-    z-index: 1;
-
-    &__logo {
-        font-size: 2.4rem;
-        margin: 0;
-        padding: 0;
-        color: $c-white;
-    }
-
-    &__ul {
-        margin-bottom: 5px;
-        padding-left: 0;
-    }
-
-    li {
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    &__link {
-        display: block;
-        padding: 1rem 1.3rem;
-        font-size: 1rem;
-        color: $c-white;
-        text-decoration: none;
-
-        &:hover {
-            color: $c-dark-blue;
-            text-decoration: none;
-        }
-
-        &-active {
-            color: $c-dark-blue;
-
-            &:hover {
-                color: $c-white;
-            }
-        }
-    }
-}
 
 .slider-header {
     width: 100%;
-    overflow: hidden;
-    // margin-top: -60px;
-    // z-index: -1;
+    box-sizing: border-box;
+    position: relative;
 
     img {
         width: 100vw;
         height: auto;
     }
 
-    &__title {
+    &__text-container {
         position: relative;
-        top: -100px;
-        left: 100px;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        padding-right: 15px;
+        text-shadow: 0 0 2px $c-black;
+
+        h2 {
+            @media only screen and (max-width: 1200px) {
+                font-size: 3.4rem;
+            }
+
+            @media only screen and (max-width: 960px) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: 720px) {
+                font-size: 2.4rem;
+            }
+
+            @media only screen and (max-width: 540px) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    .slick-dots {
+        bottom: 5px;
+
+        @media only screen and (max-width: 960px) {
+            bottom: 0;
+        }
+
+        @media only screen and (max-width: 960px) {
+            bottom: -5px;
+        }
+
+        li {
+            margin: 0 30px;
+
+            @media only screen and (max-width: 960px) {
+                margin: 0 20px;
+            }
+
+            @media only screen and (max-width: 720px) {
+                margin: 0 10px;
+            }
+        }
+
+        li button:before {
+            font-size: 14px;
+            color: $c-mongoose;
+
+            @media only screen and (max-width: 960px) {
+                font-size: 7px;
+            }
+        }
     }
 }

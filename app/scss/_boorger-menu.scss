@@ -1,0 +1,214 @@
+.main-nav {
+    border-bottom: 1px solid $c-mongoose;
+    margin-bottom: -60px;
+    background-color: $c-black-opacity;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+    @media only screen and (max-width: 1200px) {
+        border-bottom: none;
+    }
+
+    @media only screen and (max-width: 720px) {
+        margin-bottom: -56px;
+    }
+
+    @media only screen and (max-width: 540px) {
+        margin-bottom: 0;
+        background: url(../img/menu_bg.jpg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: cover;
+        box-shadow: 0 1px 2px $c-black;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__ul {
+        margin-bottom: 0;
+        padding-left: 0;
+        transition: 0.5s all;
+
+
+        @media only screen and (max-width: 540px) {
+            visibility: hidden;
+            position: absolute;
+            top: -300px;
+            display: block;
+            width: 100%;
+            margin-left: -15px;
+            background: url(../img/menu_bg_01.jpg);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            min-height: 250px;
+            box-shadow: inset 0 1px 2px $c-black;
+        }
+    }
+
+    &__logo {
+        font-size: 2.4rem;
+        margin: 0;
+        padding: 0;
+        color: $c-white;
+    }
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+
+        @media only screen and (max-width: 540px) {
+            display: block;
+        }
+
+        &:last-child {
+            a {
+                @media only screen and (min-width: 540px) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &__link {
+        padding: 1rem 1.3rem;
+        font-size: 1rem;
+        color: $c-white;
+
+        @media only screen and (max-width: 960px) {
+            padding: 1rem 1.1rem;
+        }
+
+        @media only screen and (max-width: 720px) {
+            padding: 1rem;
+        }
+
+        @media only screen and (max-width: 540px) {
+            padding: 0;
+            text-align: center;
+            font-family: Yesteryear;
+            font-size: 2.2rem;
+            color: $c-mongoose;
+        }
+
+        &:hover {
+            color: $c-mongoose;
+            text-decoration: none;
+            text-shadow: 0 0 2px $c-black;
+        }
+    }
+
+    &__logo-link {
+        font-size: 1rem;
+        color: $c-white;
+
+        h2 {
+            font-size: 36px;
+            padding: 8px 1.3rem 8px 0;
+
+            @media only screen and (max-width: 720px) {
+                font-size: 32px;
+            }
+
+            @media only screen and (max-width: 540px) {
+                font-size: 28px;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            h2 {
+                color: $c-mongoose;
+                text-shadow: 0 0 2px $c-black;
+            }
+        }
+    }
+
+    &__menu-bg {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+#main-nav-call {
+    display: none;
+
+    &:checked~.main-nav__ul {
+        visibility: visible;
+        top: 49px;
+        transition: 0.5s all;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:checked+.main-nav-burger::before {
+        transform: rotate(45deg);
+        top: 14px;
+        transition: 0.5s all;
+    }
+
+    &:checked+.main-nav-burger span {
+        display: none;
+    }
+
+    &:checked+.main-nav-burger::after {
+        transform: rotate(-45deg);
+        top: 14px;
+        transition: 0.5s all;
+    }
+}
+
+
+.main-nav-burger {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    visibility: hidden;
+    display: none;
+    margin-bottom: 0;
+
+    @media only screen and (max-width: 540px) {
+        display: block;
+        visibility: visible;
+    }
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: 5px;
+        transition: 0.5s all;
+    }
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        transition: 0.5s all;
+    }
+
+    span {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 14px;
+    }
+}

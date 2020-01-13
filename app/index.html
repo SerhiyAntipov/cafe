@@ -21,29 +21,57 @@
     <div class="wrapper">
         <header class="main-header">
             <nav class="main-nav">
-                <a href="#">
-                    <h2 class="main-nav__logo">Cafe</h2>
-                </a>
-                <ul class="main-nav__ul">
-                    <li><a href="#" class="main-nav__link">Home</a></li>
-                    <li><a href="#" class="main-nav__link">About Us</a></li>
-                    <li><a href="#" class="main-nav__link main-nav__link-active">Menu</a></li>
-                    <li><a href="#" class="main-nav__link">Reservations</a></li>
-                    <li><a href="#" class="main-nav__link">Contact</a></li>
-                </ul>
+                <div class="container main-nav__wrapper">
+                    <a href="#" class="main-nav__logo-link">
+                        <h2 class="main-nav__logo">Name Cafe</h2>
+                    </a>
+                    <input type="checkbox" id="main-nav-call">
+                    <label class="main-nav-burger" for="main-nav-call">
+                        <span></span>
+                    </label>
+                    <ul class="main-nav__ul">
+                        <li><a href="#" class="main-nav__link">About Us</a></li>
+                        <li><a href="#" class="main-nav__link">Menu</a></li>
+                        <li><a href="#" class="main-nav__link">Reservations</a></li>
+                        <li><a href="#" class="main-nav__link">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="slider-header">
-                <div>
+                <div class="slider-header__slide">
                     <img src="img/header-slider_01.jpg" alt="">
-                    <h2 class="slider-header__title c-mongoose">Making Food</h2>
+                    <div class="container slider-header__text-container">
+                        <div class="slider-header__text">
+                            <h2 class="slider-header__title c-mongoose">Beautiful Food</h2>
+                            <h5 class="slider-header__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Dignissimos sit repellendus omnis totam.</h5>
+                            <a href="#" class="btn btn-slider">See More</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="slider-header__slide">
                     <img src="img/header-slider_02.jpg" alt="">
-                    <h2 class="slider-header__title c-mongoose">Taste Better</h2>
+                    <div class="container slider-header__text-container">
+                        <div class="slider-header__text">
+                            <h2 class="slider-header__title c-mongoose">Tasty Food</h2>
+                            <h5 class="slider-header__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Officiis, recusandae.</h5>
+                            <button class="btn btn-slider">See More</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="slider-header__slide">
                     <img src="img/header-slider_03.jpg" alt="">
-                    <h2 class="slider-header__title c-mongoose">Making Food</h2>
+                    <div class="container slider-header__text-container">
+                        <div class="slider-header__text">
+                            <h2 class="slider-header__title c-mongoose">Appetizing Food</h2>
+                            <h5 class="slider-header__sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit. Nobis quidem recusandae quaerat? Libero, vel sed.
+                            </h5>
+                            <button class="btn btn-slider">See More</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </header>

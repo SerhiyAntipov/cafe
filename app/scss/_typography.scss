@@ -2,6 +2,8 @@
 
 html {
     font-size: 16px;
+    font-weight: 400;
+    font-family: Vollkorn;
 
     @media only screen and (max-width: 1200px) {
         font-size: 15px;
@@ -18,9 +20,6 @@ html {
     @media only screen and (max-width: 540px) {
         font-size: 12px;
     }
-
-    font-weight: 400;
-    font-family: Vollkorn;
 }
 
 .c-mongoose {
@@ -48,10 +47,24 @@ h3 {
 
 h4 {
     font-family: Raleway;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-transform: uppercase;
+    color: $c-white;
 }
+
+h5 {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $c-white;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
 
 p {
     font-family: Raleway;
@@ -79,7 +92,8 @@ p {
     font-size: 1rem;
     display: inline-block;
     text-align: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    cursor: pointer;
 
     &-transparent {
         background: none;
@@ -87,6 +101,27 @@ p {
         color: $c-black;
         border: 1px solid $c-mongoose;
         box-sizing: border-box;
+    }
+
+    &-slider {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-white;
+        box-sizing: border-box;
+        margin: 1rem 0 2rem;
+        padding: 0.5rem 1.5rem;
+
+        @media only screen and (max-width: 720px) {
+            margin: 0.5rem 0 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        &:hover {
+            color: $c-mongoose;
+            border: 1px solid $c-mongoose;
+            background-color: $c-black-opacity;
+        }
     }
 }
 
