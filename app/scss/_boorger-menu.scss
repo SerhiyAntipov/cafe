@@ -1,14 +1,14 @@
 .main-nav {
-    border-bottom: 1px solid $c-mongoose;
+    // border-bottom: 1px solid $c-mongoose;
     margin-bottom: -60px;
     background-color: $c-black-opacity;
     z-index: 1;
     position: sticky;
     top: 0;
 
-    @media only screen and (max-width: 1200px) {
-        border-bottom: none;
-    }
+    // @media only screen and (max-width: 1200px) {
+    //     // border-bottom: none;
+    // }
 
     @media only screen and (max-width: 720px) {
         margin-bottom: -56px;
@@ -16,12 +16,6 @@
 
     @media only screen and (max-width: 540px) {
         margin-bottom: -50px;
-        // margin-bottom: 0;
-        // background: url(../img/menu_bg.jpg);
-        // background-repeat: no-repeat;
-        // background-position-y: bottom;
-        // background-size: cover;
-        // box-shadow: 0 1px 2px $c-black;
     }
 
     &__wrapper {
@@ -36,21 +30,21 @@
         padding-left: 0;
         transition: 0.5s all;
 
-
         @media only screen and (max-width: 540px) {
+            display: block;
+            width: 100%;
+            min-height: 320px;
+            padding-top: 50px;
+            margin-left: -15px;
             visibility: hidden;
             position: absolute;
             top: -350px;
-            display: block;
-            width: 100%;
-            margin-left: -15px;
-            background: url(../img/menu_bg_02.jpg);
+            background: url(../img/menu_bg.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: cover;
-            min-height: 320px;
+            box-shadow: 0px 2px 4px $c-black;
             z-index: -1;
-            padding-top: 50px;
         }
     }
 
