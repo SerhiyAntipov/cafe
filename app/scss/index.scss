@@ -12,6 +12,14 @@
     img {
         width: 100vw;
         height: auto;
+        min-height: 320px;
+        object-fit: cover;
+
+        // @media only screen and (max-width: 540px) {
+        //     object-fit: cover;
+        //     height: 320px;
+        //     // width: auto;
+        // }
     }
 
     &__text-container {
@@ -79,5 +87,9 @@
                 font-size: 7px;
             }
         }
+    }
+
+    .slick-list {
+        min-height: 320px;
     }
 }
