@@ -1,0 +1,84 @@
+
+.slider-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    img {
+        width: 100vw;
+        height: auto;
+        min-height: 320px;
+        object-fit: cover;
+    }
+
+    &__text-container {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        padding-right: 15px;
+        text-shadow: 0 0 2px $c-black;
+
+        h2 {
+            @media only screen and (max-width: 1200px) {
+                font-size: 3.4rem;
+            }
+
+            @media only screen and (max-width: 960px) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: 720px) {
+                font-size: 2.4rem;
+            }
+
+            @media only screen and (max-width: 540px) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    .slick-dots {
+        bottom: 5px;
+
+        @media only screen and (max-width: 960px) {
+            bottom: 0;
+        }
+
+        @media only screen and (max-width: 960px) {
+            bottom: -5px;
+        }
+
+        li {
+            margin: 0 30px;
+
+            @media only screen and (max-width: 960px) {
+                margin: 0 20px;
+            }
+
+            @media only screen and (max-width: 720px) {
+                margin: 0 10px;
+            }
+        }
+
+        li button:before {
+            font-size: 14px;
+            color: $c-mongoose;
+
+            @media only screen and (max-width: 960px) {
+                font-size: 7px;
+            }
+        }
+    }
+
+    .slick-list {
+        min-height: 320px;
+    }
+}
