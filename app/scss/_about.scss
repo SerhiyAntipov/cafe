@@ -3,11 +3,17 @@
         text-align: center;
     }
 
+    &__text {
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
     &__contacts {
         margin-top: 10px;
         background-color: $c-dark-blue;
         color: $c-white;
         padding: 1rem;
+        box-sizing: border-box;
 
         h4 {
             color: $c-mongoose;

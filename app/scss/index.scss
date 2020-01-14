@@ -6,7 +6,13 @@
 @import "about";
 @import "best-price";
 
+.wrapper {
+    min-width: 320px;
+    // overflow: hidden;
+}
+
 section:not(.slider-header) {
-    margin-bottom: 30px;
-    padding: 40px 0;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    overflow: hidden;
 }

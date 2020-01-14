@@ -52,31 +52,35 @@
 
 
  $('.price-slider').slick({
-     centerMode: true,
-     centerPadding: '60px',
-     //  autoplay: true,
-     //  autoplaySpeed: 1000,
-     //  speed: 500,
      infinite: true,
-     slidesToShow: 3,
-     slidesToScroll: 3,
+     slidesToShow: 5,
+     slidesToScroll: 5,
      dots: true,
      responsive: [{
+             breakpoint: 980,
+             settings: {
+                 infinite: true,
+                 slidesToShow: 4,
+                 slidesToScroll: 4,
+                 dots: true,
+             }
+         },
+         {
              breakpoint: 768,
              settings: {
-                 //  arrows: false,
-                 centerMode: true,
-                 centerPadding: '40px',
-                 slidesToShow: 2
+                 infinite: true,
+                 slidesToShow: 3,
+                 slidesToScroll: 3,
+                 dots: true,
              }
          },
          {
              breakpoint: 480,
              settings: {
-                 //  arrows: false,
-                 centerMode: true,
-                 centerPadding: '40px',
-                 slidesToShow: 1
+                 infinite: true,
+                 slidesToShow: 2,
+                 slidesToScroll: 2,
+                 dots: true,
              }
          }
      ]

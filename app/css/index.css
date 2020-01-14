@@ -513,11 +513,17 @@ p {
   text-align: center;
 }
 
+.about__text {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 .about__contacts {
   margin-top: 10px;
   background-color: #141723;
   color: #ffffff;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .about__contacts h4 {
@@ -550,7 +556,6 @@ p {
 }
 
 .best-price {
-  min-height: 500px;
   background-color: #4c4d4f;
 }
 
@@ -558,13 +563,10 @@ p {
   text-align: center;
 }
 
-.price-slider {
-  position: relative;
-}
-
 .price-slider__slide {
   padding: 0 10px;
   box-sizing: border-box;
+  outline: none;
 }
 
 .price-slider__slide img {
@@ -573,34 +575,42 @@ p {
 }
 
 .price-slider__slide:hover .btn-small {
-  display: inline-block;
+  visibility: visible;
+  -webkit-animation: btn-scale 1s infinite;
+          animation: btn-scale 1s infinite;
+}
+
+.price-slider .btn-small {
+  bottom: 100px;
+  margin: 0;
+  position: relative;
+  visibility: hidden;
+  background-color: #bf9e7b;
+  color: #141723;
 }
 
 .price-slider__text-container {
   background-color: #141723;
   text-align: center;
-  padding-bottom: 5px;
+  padding: 5px;
+  margin-bottom: -25px;
 }
 
 .price-slider__text-container h4,
 .price-slider__text-container p {
   font-family: Vollkorn;
   color: #bf9e7b;
-}
-
-.price-slider .btn-small {
-  display: none;
-  margin: 10px 0;
+  margin-bottom: 0rem;
 }
 
 .price-slider .slick-next,
 .price-slider .slick-prev {
-  top: 100px;
+  top: 90px;
 }
 
 @media only screen and (max-width: 580px) {
   .price-slider .slick-next {
-    right: 5px;
+    right: -13px;
   }
 }
 
@@ -611,8 +621,7 @@ p {
 
 @media only screen and (max-width: 580px) {
   .price-slider .slick-prev {
-    left: 5px;
-    z-index: 1;
+    left: -13px;
   }
 }
 
@@ -629,7 +638,34 @@ p {
   font-size: 10px;
 }
 
+@-webkit-keyframes btn-scale {
+  25% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@keyframes btn-scale {
+  25% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+.wrapper {
+  min-width: 320px;
+}
+
 section:not(.slider-header) {
-  margin-bottom: 30px;
-  padding: 40px 0;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  overflow: hidden;
 }
