@@ -1,14 +1,12 @@
  // slider header ("Slick slider") -------------------------------
  $('.slider-header').slick({
-     arrows: false,
+     arrows: true,
      autoplay: true,
      pauseOnHover: false,
-     pauseOnDotsHover: true,
      edgeFriction: '0.3',
-     dots: true,
+     dots: false,
      autoplaySpeed: 4000,
-     speed: 2000,
-     zIndex: 1
+     speed: 2000
  });
 
  // my function -------------------------

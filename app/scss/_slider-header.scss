@@ -1,4 +1,3 @@
-
 .slider-header {
     width: 100%;
     box-sizing: border-box;
@@ -41,41 +40,52 @@
 
     }
 
-    .slick-slide:focus {
-        outline: none;
+
+
+    .slick-next {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+
+        &::before {
+            opacity: .2;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 20px;
+            height: 20px;
+
+            &::before {
+                font-size: 20px;
+            }
+        }
+
     }
 
-    .slick-dots {
-        bottom: 5px;
+    .slick-prev {
+        left: 10px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
 
-        @media only screen and (max-width: 960px) {
-            bottom: 0;
+        &::before {
+            opacity: .2;
+            font-size: 30px;
         }
 
-        @media only screen and (max-width: 960px) {
-            bottom: -5px;
-        }
+        @media only screen and (max-width: 480px) {
+            width: 20px;
+            height: 20px;
 
-        li {
-            margin: 0 30px;
-
-            @media only screen and (max-width: 960px) {
-                margin: 0 20px;
-            }
-
-            @media only screen and (max-width: 720px) {
-                margin: 0 10px;
+            &::before {
+                font-size: 20px;
             }
         }
+    }
 
-        li button:before {
-            font-size: 14px;
-            color: $c-mongoose;
-
-            @media only screen and (max-width: 960px) {
-                font-size: 7px;
-            }
-        }
+    .slick-slide:focus {
+        outline: none;
     }
 
     .slick-list {
