@@ -13,6 +13,13 @@
   src: url(../fonts/Yesteryear-Regular.ttf);
 }
 
+dl,
+ol,
+p,
+ul {
+  margin-bottom: 0.5rem;
+}
+
 html {
   font-size: 16px;
   font-weight: 400;
@@ -49,14 +56,15 @@ html {
 
 h1 {
   font-family: Yesteryear;
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 
 h2 {
   font-family: Yesteryear;
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 400;
+  color: #bf9e7b;
 }
 
 h3 {
@@ -106,7 +114,7 @@ p {
   padding: 1rem 3rem;
   background: #bf9e7b;
   background-color: #bf9e7b;
-  color: #000000;
+  color: #141723;
   border-radius: initial;
   font-family: Raleway;
   font-size: 1rem;
@@ -144,28 +152,32 @@ p {
 .btn-slider:hover {
   color: #bf9e7b;
   border: 1px solid #bf9e7b;
-  background-color: #00000070;
 }
 
 .btn-small {
-  padding: 0.6rem 0.2rem;
-  background: #bf9e7b;
-  background-color: #bf9e7b;
-  color: #000000;
-  border-radius: initial;
   font-family: Raleway;
+  padding: 0.2rem 0.5rem;
   font-size: 1rem;
-  display: inline-block;
-  text-align: center;
-  margin: 2rem 0;
+  margin: 0 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #bf9e7b;
+}
+
+.btn-small:hover {
+  background-color: #bf9e7b;
+  color: #141723;
+}
+
+.main-header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 .main-nav {
   margin-bottom: -60px;
-  z-index: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 @media only screen and (max-width: 720px) {
@@ -235,20 +247,21 @@ p {
 }
 
 .main-nav__link {
-  padding: 1rem 1.3rem;
+  padding: 1rem;
+  font-family: Raleway;
   font-size: 1rem;
   color: #ffffff;
 }
 
 @media only screen and (max-width: 960px) {
   .main-nav__link {
-    padding: 1rem 0.7rem;
+    padding: 1rem 0.5rem;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .main-nav__link {
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
     text-align: center;
     font-family: Yesteryear;
     font-size: 3rem;
@@ -267,10 +280,10 @@ p {
 .main-nav__link:hover::after, .main-nav__link-active::after {
   content: "";
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #bf9e7b;
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 0;
   box-shadow: 0 0 2px #000000;
 }
@@ -494,4 +507,129 @@ p {
 
 .slider-header .slick-list {
   min-height: 320px;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about__contacts {
+  margin-top: 10px;
+  background-color: #141723;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.about__contacts h4 {
+  color: #bf9e7b;
+}
+
+.about__contacts .btn-transparent {
+  color: #ffffff;
+}
+
+.about__contacts .btn-transparent:hover {
+  background-color: #bf9e7b;
+  color: #141723;
+}
+
+.about__contacts-open p {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+}
+
+.about__contacts-open p span {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  border-bottom: 1px dotted #ffffff;
+  margin: 0 5px;
+}
+
+.best-price {
+  min-height: 500px;
+  background-color: #4c4d4f;
+}
+
+.best-price h2 {
+  text-align: center;
+}
+
+.price-slider {
+  position: relative;
+}
+
+.price-slider__slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.price-slider__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.price-slider__slide:hover .btn-small {
+  display: inline-block;
+}
+
+.price-slider__text-container {
+  background-color: #141723;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.price-slider__text-container h4,
+.price-slider__text-container p {
+  font-family: Vollkorn;
+  color: #bf9e7b;
+}
+
+.price-slider .btn-small {
+  display: none;
+  margin: 10px 0;
+}
+
+.price-slider .slick-next,
+.price-slider .slick-prev {
+  top: 100px;
+}
+
+@media only screen and (max-width: 580px) {
+  .price-slider .slick-next {
+    right: 5px;
+  }
+}
+
+.price-slider .slick-next::before {
+  color: #141723;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 580px) {
+  .price-slider .slick-prev {
+    left: 5px;
+    z-index: 1;
+  }
+}
+
+.price-slider .slick-prev::before {
+  color: #141723;
+  opacity: 1;
+}
+
+.price-slider .slick-dots {
+  bottom: -35px;
+}
+
+.price-slider .slick-dots li button:before {
+  font-size: 10px;
+}
+
+section:not(.slider-header) {
+  margin-bottom: 30px;
+  padding: 40px 0;
 }

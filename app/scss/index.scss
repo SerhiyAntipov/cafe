@@ -1,5 +1,12 @@
 @import "fonts";
 @import "media";
 @import "typography";
-@import "boorger-menu";
+@import "burger-menu";
 @import "slider-header";
+@import "about";
+@import "best-price";
+
+section:not(.slider-header) {
+    margin-bottom: 30px;
+    padding: 40px 0;
+}

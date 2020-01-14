@@ -1,0 +1,37 @@
+.about {
+    h2 {
+        text-align: center;
+    }
+
+    &__contacts {
+        margin-top: 10px;
+        background-color: $c-dark-blue;
+        color: $c-white;
+        padding: 1rem;
+
+        h4 {
+            color: $c-mongoose;
+        }
+
+        .btn-transparent {
+            color: $c-white;
+
+            &:hover {
+                background-color: $c-mongoose;
+                color: $c-dark-blue;
+            }
+        }
+    }
+
+    &__contacts-open p {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        span {
+            flex-grow: 1;
+            border-bottom: 1px dotted $c-white;
+            margin: 0 5px;
+        }
+    }
+}

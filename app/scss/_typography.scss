@@ -1,5 +1,12 @@
 @import "vars";
 
+dl,
+ol,
+p,
+ul {
+    margin-bottom: 0.5rem;
+}
+
 html {
     font-size: 16px;
     font-weight: 400;
@@ -28,14 +35,15 @@ html {
 
 h1 {
     font-family: Yesteryear;
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 h2 {
     font-family: Yesteryear;
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 400;
+    color: $c-mongoose;
 }
 
 h3 {
@@ -86,7 +94,7 @@ p {
     padding: 1rem 3rem;
     background: $c-mongoose;
     background-color: $c-mongoose;
-    color: $c-black;
+    color: $c-dark-blue;
     border-radius: initial;
     font-family: Raleway;
     font-size: 1rem;
@@ -120,20 +128,21 @@ p {
         &:hover {
             color: $c-mongoose;
             border: 1px solid $c-mongoose;
-            background-color: $c-black-opacity;
         }
     }
-}
 
-.btn-small {
-    padding: 0.6rem 0.2rem;
-    background: $c-mongoose;
-    background-color: $c-mongoose;
-    color: $c-black;
-    border-radius: initial;
-    font-family: Raleway;
-    font-size: 1rem;
-    display: inline-block;
-    text-align: center;
-    margin: 2rem 0;
+    &-small {
+        font-family: Raleway;
+        padding: 0.2rem 0.5rem;
+        font-size: 1rem;
+        margin: 0 10px;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-mongoose;
+
+        &:hover {
+            background-color: $c-mongoose;
+            color: $c-dark-blue;
+        }
+    }
 }
