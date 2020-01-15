@@ -1,0 +1,478 @@
+[{
+        "data-id": "1",
+        "food-name": "Creme brulee",
+        "food-description": "Classic set vanilla custard with a caramelised sugar crust",
+        "food-price": "6.95",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_1.jpg"
+    },
+    {
+        "data-id": "2",
+        "food-name": "Apple tart fine",
+        "food-description": "Baked apple tart with vanilla ice cream and Calvados flambe (14 mins cooking time)",
+        "food-price": "8.5",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_2.jpg"
+    },
+    {
+        "data-id": "3",
+        "food-name": "Chocolate bombe",
+        "food-description": "Melting chocolate bombe with a vanilla ice cream and honeycomb centre with hot salted caramel sauce",
+        "food-price": "9.25",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_3.jpg"
+    },
+    {
+        "data-id": "4",
+        "food-name": "Blackberry ice cream sundae",
+        "food-description": "Vanilla ice cream with meringue, roasted hazelnuts, blackberry mousse, shortbread and a warm blackberry sauce",
+        "food-price": "8.25",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_4.jpg"
+    },
+    {
+        "data-id": "5",
+        "food-name": "Malted banana ice cream",
+        "food-description": "Chocolate brownie, caramelised banana, candied pecans and cocoa nib tuile",
+        "food-price": "7.5",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_5.jpg"
+    },
+    {
+        "data-id": "6",
+        "food-name": "Rum baba",
+        "food-description": "Plantation rum soaked sponge with Chantilly cream and raspberries",
+        "food-price": "8.25",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_6.jpg"
+    },
+    {
+        "data-id": "7",
+        "food-name": "Ice creams and sorbets",
+        "food-description": "Selection of dairy ice creams and fruit sorbets",
+        "food-price": "5.25",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_7.jpg"
+    },
+    {
+        "data-id": "8",
+        "food-name": "Frozen berries",
+        "food-description": "Mixed berries with yoghurt sorbet, warm white chocolate sauce",
+        "food-price": "7.25",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_8.jpg"
+    },
+    {
+        "data-id": "9",
+        "food-name": "Selection of three cheeses",
+        "food-description": "Fourme d`Ambert, Cornish Yarg and Camembert from Normandy with pear chutney, rye crackers",
+        "food-price": "9.95",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_9.jpg"
+    },
+    {
+        "data-id": "10",
+        "food-name": "Mini chocolate truffles",
+        "food-description": "With a liquid salted caramel centre",
+        "food-price": "3.5",
+        "food-category": "desserts",
+        "best-price": "no",
+        "url": "img/price-slider/img_10.jpg"
+    },
+    {
+        "data-id": "11",
+        "food-name": "Roast pumpkin soup",
+        "food-description": "Creamed pumpkin with truffle ricotta, pine nuts and crispy sage",
+        "food-price": "6.25",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_11.jpg"
+    },
+    {
+        "data-id": "12",
+        "food-name": "Yellowfin tuna carpaccio",
+        "food-description": "Cucumber, baby basil with an apple, jalapeno and avocado sauce",
+        "food-price": "9.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_12.jpg"
+    },
+    {
+        "data-id": "13",
+        "food-name": "Crispy duck salad",
+        "food-description": "Warm crispy duck with five spice dressing, toasted cashews, watermelon, beansprouts, sesame seeds, coriander and ginger",
+        "food-price": "8.55",
+        "food-category": "starters",
+        "best-price": "yes",
+        "url": "img/price-slider/img_13.jpg"
+    },
+    {
+        "data-id": "14",
+        "food-name": "Truffled wild mushrooms",
+        "food-description": "Potato rosti, creamed mushroom, fried quail`s egg and grated truffle",
+        "food-price": "7.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_14.jpg"
+    },
+    {
+        "data-id": "15",
+        "food-name": "The Ivy Cure smoked salmon",
+        "food-description": "Black pepper, lemon, and dark rye bread",
+        "food-price": "9.75",
+        "food-category": "starters",
+        "best-price": "yes",
+        "url": "img/price-slider/img_15.jpg"
+    },
+    {
+        "data-id": "16",
+        "food-name": "The Ivy Cure smoked salmon and crab",
+        "food-description": "A quenelle of crab and dill cream, lemon, dark rye bread",
+        "food-price": "12.75",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_16.jpg"
+    },
+    {
+        "data-id": "17",
+        "food-name": "Lobster risotto",
+        "food-description": "Samphire, basil, Arborio rice, finished with a shellfish foam",
+        "food-price": "12.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_17.jpg"
+    },
+    {
+        "data-id": "18",
+        "food-name": "Steak tartare",
+        "food-description": "Hand-cut raw beef striploin with a Tabasco mustard dressing, cornichons, shallot, parsley, egg yolk and toasted granary",
+        "food-price": "8.75",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_18.jpg"
+    },
+    {
+        "data-id": "19",
+        "food-name": "Laverstoke Park Farm buffalo mozzarella",
+        "food-description": "Crispy artichokes, pear and truffle honey",
+        "food-price": "12.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_19.jpg"
+    },
+    {
+        "data-id": "20",
+        "food-name": "Prawn cocktail",
+        "food-description": "Classic prawn cocktail with baby gem, avocado, cherry tomatoes and Marie Rose sauce",
+        "food-price": "9.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_20.jpg"
+    },
+    {
+        "data-id": "21",
+        "food-name": "Tempura prawns with salt and pepper squid",
+        "food-description": "Crunchy fried prawns, wasabi miso sauce, Sriracha",
+        "food-price": "9.25",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_21.jpg"
+    },
+    {
+        "data-id": "22",
+        "food-name": "Jackfruit and peanut bang bang salad",
+        "food-description": "Chayote, Chinese leaf, mooli, crispy wonton, peanuts, sesame seeds and coriander",
+        "food-price": "7.95",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_22.jpg"
+    },
+    {
+        "data-id": "23",
+        "food-name": "Duck liver parfait",
+        "food-description": "Caramelised hazelnuts, truffle, pear and ginger compote, toasted brioche",
+        "food-price": "8.5",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_23.jpg"
+    },
+    {
+        "data-id": "24",
+        "food-name": "Seared Atlantic scallops",
+        "food-description": "Cauliflower puree, caper butter, tamarind glaze, apple batons and a golden crumb",
+        "food-price": "12.5",
+        "food-category": "starters",
+        "best-price": "no",
+        "url": "img/price-slider/img_24.jpg"
+    },
+    {
+        "data-id": "25",
+        "food-name": "The Ivy shepherds pie",
+        "food-description": "Slow-braised lamb leg with beef, Wookey Hole Cheddar potato mash",
+        "food-price": "14.5",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_25.jpg"
+    },
+    {
+        "data-id": "26",
+        "food-name": "Roasted half chicken",
+        "food-description": "Off the bone with crispy skin, smoked aubergine puree, tomatoes, peppers and a Moroccan sauce",
+        "food-price": "16.5",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_26.jpg"
+    },
+    {
+        "data-id": "27",
+        "food-name": "Salmon and smoked haddock fish cake",
+        "food-description": "Crushed pea and herb sauce with a soft poached hen`s egg and baby watercress",
+        "food-price": "14.5",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_27.jpg"
+    },
+    {
+        "data-id": "28",
+        "food-name": "Keralan sweet potato curry",
+        "food-description": "Choy sum, broccoli, coriander and coconut with steamed jasmine rice",
+        "food-price": "14.25",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_28.jpg"
+    },
+    {
+        "data-id": "29",
+        "food-name": "Roast butternut squash with grains",
+        "food-description": "Buckwheat, chickpeas, pumpkin seeds, sesame and pomegranate with crumbled feta cheese, harissa sauce and coriander dressing",
+        "food-price": "13.5",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_29.jpg"
+    },
+    {
+        "data-id": "30",
+        "food-name": "Roast fillet of salmon",
+        "food-description": "Sprouting broccoli, Champagne and caper cream sauce",
+        "food-price": "16.5",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_30.jpg"
+    },
+    {
+        "data-id": "31",
+        "food-name": "Fish & chips",
+        "food-description": "Traditional battered cod served with mashed peas, thick cut chips and tartare sauce",
+        "food-price": "16.99",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_31.jpg"
+    },
+    {
+        "data-id": "32",
+        "food-name": "Chicken Milanese",
+        "food-description": "Brioche-crumbed chicken breast with a fried egg, Parmesan and truffle cream sauce",
+        "food-price": "16.75",
+        "food-category": "mains",
+        "best-price": "yes",
+        "url": "img/price-slider/img_32.jpg"
+    },
+    {
+        "data-id": "33",
+        "food-name": "Blackened cod fillet",
+        "food-description": "Baked in a banana leaf with a soy and sesame marinade, citrus-pickled fennel, grilled broccoli, chilli and yuzu mayonnaise",
+        "food-price": "17.95",
+        "food-category": "mains",
+        "best-price": "no",
+        "url": "img/price-slider/img_33.jpg"
+    },
+    {
+        "data-id": "34",
+        "food-name": "The Ivy vegetarian shepherd`s pie",
+        "food-description": "Truffle-stuffed king oyster mushrooms with quinoa, chickpeas, roasted peppers, aubergine and a Moroccan tomato sauce",
+        "food-price": "14.5",
+        "food-category": "mains",
+        "best-price": "no",
+        "url": "img/price-slider/img_34.jpg"
+    },
+    {
+        "data-id": "35",
+        "food-name": "Aromatic duck curry",
+        "food-description": "Coconut-based Keralan sauce with chilli, choy sum, sweet potato and jasmine rice",
+        "food-price": "18.45",
+        "food-category": "mains",
+        "best-price": "no",
+        "url": "img/price-slider/img_35.jpg"
+    },
+    {
+        "data-id": "36",
+        "food-name": "Iberico pork",
+        "food-description": "Roasted pork cutlet with cep butter, creamed potato, baked apple and Calvados cream sauce",
+        "food-price": "21.55",
+        "food-category": "mains",
+        "best-price": "no",
+        "url": "img/price-slider/img_36.jpg"
+    },
+    {
+        "data-id": "37",
+        "food-name": "Prosecco, Bisol",
+        "food-description": "Jeio, Veneto, Italy",
+        "food-price": "7.25",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_37.jpg"
+    },
+    {
+        "data-id": "38",
+        "food-name": "The Ivy Collection Champagne",
+        "food-description": "Champagne, France",
+        "food-price": "9.95",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_38.jpg"
+    },
+    {
+        "data-id": "39",
+        "food-name": "Veuve Clicquot Yellow Label",
+        "food-description": "Champagne, France",
+        "food-price": "13.95",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_39.jpg"
+    },
+    {
+        "data-id": "40",
+        "food-name": "Nyetimber Classic Cuvee",
+        "food-description": "West Sussex, England",
+        "food-price": "14.25",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_40.jpg"
+    },
+    {
+        "data-id": "41",
+        "food-name": "Veuve Clicquot Rose",
+        "food-description": "Champagne, France",
+        "food-price": "16.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_41.jpg"
+    },
+    {
+        "data-id": "42",
+        "food-name": "The Ivy Royale",
+        "food-description": "Our signature Kir Royale with Beefeater Gin infused with hibiscus & rosewater, sloe juice and Cocchi Rosa Vermouth topped with The Ivy Collection Champagne",
+        "food-price": "10.75",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_42.jpg"
+    },
+    {
+        "data-id": "43",
+        "food-name": "Peach Bellini",
+        "food-description": "Peach pulp and Prosecco",
+        "food-price": "8.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_43.jpg"
+    },
+    {
+        "data-id": "44",
+        "food-name": "Aperol Spritz",
+        "food-description": "Aperol, Prosecco and Fever-Tree Soda with an orange twist",
+        "food-price": "9.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_44.jpg"
+    },
+    {
+        "data-id": "45",
+        "food-name": "Ruby Grapefruit Spritz",
+        "food-description": "Pampelle Ruby Grapefruit Aperitif, Lillet Blanc, Fever-Tree Lemon Tonic and Prosecco",
+        "food-price": "9",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_45.jpg"
+    },
+    {
+        "data-id": "46",
+        "food-name": "White Port & Tonic",
+        "food-description": "Light and floral Graham`s Blend No.5 White Port and Fever-Tree Naturally Light Indian Tonic, served with a mint sprig and lemon twist",
+        "food-price": "8.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_46.jpg"
+    },
+    {
+        "data-id": "47",
+        "food-name": "The Ivy Special G&T",
+        "food-description": "Beefeater Gin, lavender, cucumber and lime with Fever-Tree Mediterranean Tonic",
+        "food-price": "9.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_47.jpg"
+    },
+    {
+        "data-id": "48",
+        "food-name": "Pink G&T",
+        "food-description": "Beefeater Pink Gin, fresh strawberries and fresh mint with Fever-Tree Elderflower Tonic",
+        "food-price": "9.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_48.jpg"
+    },
+    {
+        "data-id": "49",
+        "food-name": "Seville G&T",
+        "food-description": "Tanqueray Flor de Sevilla Gin, Aperol and an orange slice with Fever-Tree Aromatic Tonic",
+        "food-price": "10.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_49.jpg"
+    },
+    {
+        "data-id": "50",
+        "food-name": "Pomme Epicee",
+        "food-description": "Copperhead Gin, 30&40 Double Jus Apple Cider Liqueur, cinnamon and Fever-Tree Naturally Light Tonic",
+        "food-price": "11.5",
+        "food-category": "drinks",
+        "best-price": "no",
+        "url": "img/price-slider/img_50.jpg"
+    },
+    {
+        "data-id": "51",
+        "food-name": "Chicken Milanese",
+        "food-description": "Brioche-crumbed chicken breast with a fried egg, Parmesan and truffle cream sauce",
+        "food-price": "25.45",
+        "food-category": "header",
+        "best-price": "no",
+        "url": "img/header-slider/header-slider_01.jpg"
+    },
+    {
+        "data-id": "52",
+        "food-name": "Blackened cod fillet",
+        "food-description": "Baked in a banana leaf with a soy and sesame marinade, citrus-pickled fennel, grilled broccoli, chilli and yuzu mayonnaise",
+        "food-price": "20.95",
+        "food-category": "header",
+        "best-price": "no",
+        "url": "img/header-slider/header-slider_01.jpg"
+    },
+    {
+        "data-id": "53",
+        "food-name": "Aromatic duck curry",
+        "food-description": "Coconut-based Keralan sauce with chilli, choy sum, sweet potato and jasmine rice",
+        "food-price": "22.5",
+        "food-category": "header",
+        "best-price": "no",
+        "url": "img/header-slider/header-slider_01.jpg"
+    }
+]
