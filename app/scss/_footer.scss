@@ -1,5 +1,8 @@
 .main-footer {
-    background-color: $c-dark-blue;
+    background: $c-dark-blue;
+    // background-image: url(../img/bg.jpg);
+    // background-position: top center;
+    // background-size: cover;
     color: #ffffff;
     padding: 1rem;
     box-sizing: border-box;
@@ -13,7 +16,7 @@
         }
     }
 
-    .row div,
+    .row>div,
     .row>a {
         margin-bottom: 25px;
     }

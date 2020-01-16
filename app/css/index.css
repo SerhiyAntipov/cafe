@@ -720,7 +720,7 @@ p {
 }
 
 .main-footer {
-  background-color: #141723;
+  background: #141723;
   color: #ffffff;
   padding: 1rem;
   box-sizing: border-box;
@@ -735,7 +735,7 @@ p {
   color: #141723;
 }
 
-.main-footer .row div,
+.main-footer .row > div,
 .main-footer .row > a {
   margin-bottom: 25px;
 }
