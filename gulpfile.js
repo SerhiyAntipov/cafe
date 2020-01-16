@@ -51,6 +51,13 @@ gulp.task('bootstrap', function () {
 });
 //=============================
 
+// smooth-scroll +++++++++++++++++++
+gulp.task('smooth-scroll', function () {
+  gulp.src('node_modules/smooth-scroll/dist/smooth-scroll.min.js')
+    .pipe(gulp.dest('app/modules/smooth-scroll/js'))
+});
+//=============================
+
 // slick carousel ++++++++++++++
 gulp.task('slick-carousel', function () {
   gulp.src(['node_modules/slick-carousel/slick/slick.css', 'node_modules/slick-carousel/slick/slick-theme.css'])
@@ -105,7 +112,7 @@ gulp.task('scss', function () {
 
 // json +++++++++++++++++++++
 gulp.task('json', function () {
-  return gulp.src('app/*.json')
+  return gulp.src('app/**/*.json')
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -135,13 +142,13 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
   gulp.watch('app/*.html', gulp.parallel('html'));
-  gulp.watch('app/*.json', gulp.parallel('json'));
+  gulp.watch('app/**/*.json', gulp.parallel('json'));
   gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 //=============================
 
 // default task +++++++++++++++++++++
-gulp.task('default', gulp.parallel('jquery', 'normalize-css', 'bootstrap', 'slick-carousel', 'html', 'scss', 'json', 'js', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('jquery', 'normalize-css', 'bootstrap', 'smooth-scroll', 'slick-carousel', 'html', 'scss', 'json', 'js', 'browser-sync', 'watch'));
 //=============================
 
 // task export project to DIST folder +++++++++++++++++
@@ -150,7 +157,7 @@ gulp.task('export', async function () {
   gulp.src('app/**/*.html').pipe(gulp.dest('dist'));
   gulp.src('app/css/**/*.css').pipe(gulp.dest('dist/css'));
   gulp.src('app/js/*.js').pipe(gulp.dest('dist/js'));
-  gulp.src('app/*.json').pipe(gulp.dest('dist'));
+  gulp.src('app/**/*.json').pipe(gulp.dest('dist'));
   gulp.src('app/fonts/**/*.*').pipe(gulp.dest('dist/fonts'));
   gulp.src('app/data/*.*').pipe(gulp.dest('dist/data'));
   gulp.src('app/img/**/*.*').pipe(gulp.dest('dist/img'));

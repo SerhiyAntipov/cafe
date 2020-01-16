@@ -1,4 +1,11 @@
   (function () {
+      // scroll  smooth-------------------------------
+      let scroll = new SmoothScroll('a[href*="#"]', {
+          ignore: '[data-scroll-ignore]',
+          speed: 500,
+          offset: 45
+      });
+
       // menu active -------------------------------
       let mainNavLink = document.querySelectorAll('.main-nav__link');
       let mainNavLinkActive = 0;
@@ -40,19 +47,66 @@
           xhr.onreadystatechange = function () {
               if (xhr.readyState === 4 && xhr.status === 200) {
                   menuData = JSON.parse(xhr.response);
+                  dataHeaderSlider(menuData);
                   dataBestPrice(menuData);
               }
           }
-          xhr.open('GET', 'menu-data.json', true);
+          xhr.open('GET', 'data/menu-data.json', true);
           xhr.send();
 
       })();
-
-
-      startHeaderSlider();
   })();
 
-  // filter data best price -------------
+
+  // HEADER SLIDER +++++++++++++++++++++++++++++++++++++++++++++++++++
+  // filter slider data 
+  function dataHeaderSlider(menuData) {
+      let dataHeaderSlider = menuData.filter(function (data, i, object) {
+          if (data["food-category"] == 'header') return true
+      })
+      renderHeaderSlider(dataHeaderSlider);
+  }
+
+  // render Best price slider
+  function renderHeaderSlider(dataHeaderSlider) {
+      let headerSliders = document.querySelector('.slider-header')
+      let headerSlide = '';
+      dataHeaderSlider.forEach(function (data, i) {
+          headerSlide +=
+              `
+        <div class="slider-header__slide">
+            <img src="${dataHeaderSlider[i]['url']}" alt="img ${dataHeaderSlider[i]['food-name']}">
+            <div class="container slider-header__text-container">
+                <div class="slider-header__text">
+                    <h2 class="slider-header__title c-mongoose">${dataHeaderSlider[i]['food-name']}</h2>
+                    <h5 class="slider-header__sub-title">${dataHeaderSlider[i]['food-description']}</h5>
+                    <a href="#" class="btn btn-slider">See More</a>
+                </div>
+            </div>
+        </div>
+      `
+      });
+      headerSliders.innerHTML = headerSlide;
+      startHeaderSlider();
+  }
+
+  // header slider ("Slick slider") -------------------------------
+  function startHeaderSlider() {
+      $('.slider-header').slick({
+          arrows: true,
+          autoplay: true,
+          pauseOnHover: false,
+          edgeFriction: '0.3',
+          dots: false,
+          autoplaySpeed: 4000,
+          speed: 2000
+      });
+  };
+  // END HEADER SLIDER ============================================
+
+
+  // BEST PRICE SLIDER ++++++++++++++++++++++++++++++++++++++++++++++
+  // filter slider data
   function dataBestPrice(menuData) {
       let bestPrice = menuData.filter(function (data, i, object) {
           if (data["best-price"] == 'yes') return true
@@ -72,7 +126,7 @@
             <div class="price-slider__text-container">
                 <button class="btn btn-small">Read More</button>
                 <p class="price-slider__name">${bestPrice[i]['food-name']}</p>
-                <h4 class="price-slider__price">${bestPrice[i]['food-price']}</h4>
+                <h4 class="price-slider__price">$${bestPrice[i]['food-price']}</h4>
             </div>
         </div>`
       });
@@ -80,25 +134,12 @@
       startPriceSlider();
   }
 
-
-  // header slider ("Slick slider") -------------------------------
-  function startHeaderSlider() {
-      $('.slider-header').slick({
-          arrows: true,
-          autoplay: true,
-          pauseOnHover: false,
-          edgeFriction: '0.3',
-          dots: false,
-          autoplaySpeed: 4000,
-          speed: 2000
-      });
-  };
-
   // best price slider ("Slick slider") -------------------------------
   function startPriceSlider() {
       $('.price-slider').slick({
           infinite: true,
           adaptiveHeight: true,
+          edgeFriction: '0.5',
           slidesToShow: 5,
           slidesToScroll: 5,
           dots: true,
@@ -108,6 +149,7 @@
                   settings: {
                       infinite: true,
                       adaptiveHeight: true,
+                      edgeFriction: '0.5',
                       slidesToShow: 4,
                       slidesToScroll: 4,
                       dots: true,
@@ -118,6 +160,7 @@
                   settings: {
                       infinite: true,
                       adaptiveHeight: true,
+                      edgeFriction: '0.5',
                       slidesToShow: 3,
                       slidesToScroll: 3,
                       dots: true,
@@ -128,6 +171,7 @@
                   settings: {
                       infinite: true,
                       adaptiveHeight: true,
+                      edgeFriction: '0.5',
                       slidesToShow: 2,
                       slidesToScroll: 2,
                       dots: true,
@@ -136,3 +180,4 @@
           ]
       });
   };
+  // END BEST PRICE SLIDER ============================================

@@ -7,6 +7,7 @@
         "best-price": "no",
         "url": "img/price-slider/img_1.jpg"
     },
+
     {
         "data-id": "2",
         "food-name": "Apple tart fine",
@@ -464,7 +465,7 @@
         "food-price": "20.95",
         "food-category": "header",
         "best-price": "no",
-        "url": "img/header-slider/header-slider_01.jpg"
+        "url": "img/header-slider/header-slider_02.jpg"
     },
     {
         "data-id": "53",
@@ -473,6 +474,6 @@
         "food-price": "22.5",
         "food-category": "header",
         "best-price": "no",
-        "url": "img/header-slider/header-slider_01.jpg"
+        "url": "img/header-slider/header-slider_03.jpg"
     }
 ]

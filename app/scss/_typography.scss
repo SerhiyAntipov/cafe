@@ -103,12 +103,25 @@ p {
     margin: 1rem 0;
     cursor: pointer;
 
+    &:hover {
+        background: none;
+        background-color: $c-transparent;
+        color: $c-white;
+        border: 1px solid $c-mongoose;
+        box-sizing: border-box;
+    }
+
     &-transparent {
         background: none;
         background-color: $c-transparent;
-        color: $c-black;
+        color: $c-white;
         border: 1px solid $c-mongoose;
         box-sizing: border-box;
+
+        &:hover {
+            background-color: #bf9e7b;
+            color: #141723;
+        }
     }
 
     &-slider {
@@ -139,10 +152,13 @@ p {
         background-color: $c-transparent;
         color: $c-white;
         border: 1px solid $c-mongoose;
+        text-decoration: none;
+        display: inline-block;
 
         &:hover {
             background-color: $c-mongoose;
             color: $c-dark-blue;
+            text-decoration: none;
         }
     }
 }

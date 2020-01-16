@@ -18,15 +18,6 @@
         h4 {
             color: $c-mongoose;
         }
-
-        .btn-transparent {
-            color: $c-white;
-
-            &:hover {
-                background-color: $c-mongoose;
-                color: $c-dark-blue;
-            }
-        }
     }
 
     &__contacts-open p {

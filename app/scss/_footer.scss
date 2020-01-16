@@ -1,0 +1,36 @@
+.main-footer {
+    background-color: $c-dark-blue;
+    color: #ffffff;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    .btn-transparent {
+        color: #ffffff;
+
+        &:hover {
+            background-color: #bf9e7b;
+            color: #141723;
+        }
+    }
+
+    .row div,
+    .row>a {
+        margin-bottom: 25px;
+    }
+
+    .footer-col-2 {
+        @media only screen and (max-width: 991px) {
+            order: 1;
+        }
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        a {
+            margin: 0;
+        }
+    }
+}

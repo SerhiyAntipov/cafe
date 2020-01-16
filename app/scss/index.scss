@@ -5,14 +5,19 @@
 @import "slider-header";
 @import "about";
 @import "best-price";
+@import "menu";
+@import "reservations";
+@import "collage";
+@import "footer";
 
 .wrapper {
     min-width: 320px;
     // overflow: hidden;
+    // overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 section:not(.slider-header) {
-    margin-bottom: 20px;
-    padding: 20px 0;
+    padding: 20px 0 40px;
     overflow: hidden;
 }
