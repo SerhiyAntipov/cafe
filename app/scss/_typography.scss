@@ -51,6 +51,8 @@ h3 {
     font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
+    color: $c-mongoose;
+    text-align: center;
 }
 
 h4 {
@@ -119,8 +121,8 @@ p {
         box-sizing: border-box;
 
         &:hover {
-            background-color: #bf9e7b;
-            color: #141723;
+            background-color: $c-mongoose;
+            color: $c-dark-blue;
         }
     }
 

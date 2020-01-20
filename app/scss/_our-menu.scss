@@ -1,0 +1,86 @@
+.our-menu {
+    min-height: 500px;
+    background-color: $c-dark-blue;
+    color: #ffffff;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    &__list {
+        padding-left: 0;
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__category-title {
+        list-style: none;
+        display: inline-block;
+        border: 1px solid $c-mongoose;
+        margin: 0 7px 15px 7px;
+        font-family: Raleway;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $c-mongoose;
+        text-align: center;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &.active {
+            opacity: 1;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            width: 25px;
+            height: 0.8rem;
+            border-top: 1px dotted $c-mongoose;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+    }
+
+    &__category-wrapper {
+        display: grid;
+        grid-gap: 10px 40px;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .food {
+        &__wrapper {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &__sub-title {
+            overflow: hidden;
+
+            span {
+                display: inline;
+                border-bottom: 1px dotted $c-white;
+                padding-right: 100%;
+                margin-left: 5px;
+                position: relative;
+                bottom: 8px;
+            }
+        }
+
+        &__price {
+            padding-left: 30px;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            color: $c-mongoose;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
