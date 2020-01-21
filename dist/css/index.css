@@ -758,6 +758,13 @@ p {
   display: flex;
   -webkit-box-align: end;
           align-items: flex-end;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.our-menu .food__info {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 
 .our-menu .food__sub-title {
@@ -778,6 +785,8 @@ p {
   font-size: 2.4rem;
   text-transform: uppercase;
   color: #bf9e7b;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
 }
 
 .our-menu h2 {

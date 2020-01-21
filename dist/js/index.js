@@ -47,8 +47,9 @@
           xhr.onreadystatechange = function () {
               if (xhr.readyState === 4 && xhr.status === 200) {
                   menuData = JSON.parse(xhr.response);
-                  dataHeaderSlider(menuData);
-                  dataBestPrice(menuData);
+                  headerSliderData(menuData);
+                  bestPriceData(menuData);
+                  ourMenuData(menuData);
               }
           }
           xhr.open('GET', 'data/menu-data.json', true);
@@ -60,26 +61,26 @@
 
   // HEADER SLIDER +++++++++++++++++++++++++++++++++++++++++++++++++++
   // filter slider data 
-  function dataHeaderSlider(menuData) {
-      let dataHeaderSlider = menuData.filter(function (data, i, object) {
+  function headerSliderData(menuData) {
+      let headerSliderData = menuData.filter(function (data, i, object) {
           if (data["food-category"] == 'header') return true
       })
-      renderHeaderSlider(dataHeaderSlider);
+      renderHeaderSlider(headerSliderData);
   }
 
   // render Best price slider
-  function renderHeaderSlider(dataHeaderSlider) {
+  function renderHeaderSlider(headerSliderData) {
       let headerSliders = document.querySelector('.slider-header')
       let headerSlide = '';
-      dataHeaderSlider.forEach(function (data, i) {
+      headerSliderData.forEach(function (data, i) {
           headerSlide +=
               `
         <div class="slider-header__slide">
-            <img src="${dataHeaderSlider[i]['url']}" alt="img ${dataHeaderSlider[i]['food-name']}">
+            <img src="${headerSliderData[i]['url']}" alt="img ${headerSliderData[i]['food-name']}">
             <div class="container slider-header__text-container">
                 <div class="slider-header__text">
-                    <h2 class="slider-header__title c-mongoose">${dataHeaderSlider[i]['food-name']}</h2>
-                    <h5 class="slider-header__sub-title">${dataHeaderSlider[i]['food-description']}</h5>
+                    <h2 class="slider-header__title c-mongoose">${headerSliderData[i]['food-name']}</h2>
+                    <h5 class="slider-header__sub-title">${headerSliderData[i]['food-description']}</h5>
                     <a href="#" class="btn btn-slider">See More</a>
                 </div>
             </div>
@@ -107,7 +108,7 @@
 
   // BEST PRICE SLIDER ++++++++++++++++++++++++++++++++++++++++++++++
   // filter slider data
-  function dataBestPrice(menuData) {
+  function bestPriceData(menuData) {
       let bestPrice = menuData.filter(function (data, i, object) {
           if (data["best-price"] == 'yes') return true
       })
@@ -181,3 +182,92 @@
       });
   };
   // END BEST PRICE SLIDER ============================================
+
+
+  // OUR MENU ++++++++++++++++++++++++++++++++++++++++++++++
+  let allMenuBase
+
+  function ourMenuData(menuData) {
+
+      let foodsCategory = menuData.map(function (data, i, object) {
+          return data['food-category'];
+      })
+      let ourMenuCategory = Array.from(new Set(foodsCategory));
+
+
+      allMenuBase = [];
+      ourMenuCategory.forEach(function (content, x, object) {
+          allMenuBase.push(menuData.filter(function (content, i, object) {
+              if (content["food-category"] == ourMenuCategory[x]) return true
+          }))
+      })
+      console.log(allMenuBase[0])
+      console.log(ourMenuCategory)
+
+
+      renderOurMenuList(ourMenuCategory);
+  };
+
+
+  // Render Our Menu List  ===========================
+  function renderOurMenuList(ourMenuCategory) {
+
+      let ourMenu = document.querySelector('.our-menu__list');
+      let listsOurMenu = "";
+      ourMenuCategory.forEach(function (data, i, object) {
+          listsOurMenu += `
+        <li class="our-menu__category-title" data-id="${i}">${data}</li> `
+      });
+      ourMenu.innerHTML = listsOurMenu;
+
+      ourMenuCategoryActive(ourMenuCategory);
+  }
+
+
+  // Our Menu Category Active ===========================
+  function ourMenuCategoryActive(ourMenuCategory) {
+      let ourMenuCategoryTitle = document.querySelectorAll('.our-menu__category-title');
+      let categoryActive = "0";
+      ourMenuCategoryTitle.forEach(function (categoryTitle, i, element) {
+          if (categoryTitle.innerText.toLowerCase() == 'mains') {
+              categoryTitle.classList.toggle('active');
+              categoryActive = categoryTitle.getAttribute('data-id');
+          } else {
+              element[categoryActive].classList.toggle('active');
+          }
+          categoryTitle.addEventListener('click', function (event) {
+              if (event.target.classList.length <= 1) {
+                  event.target.classList.toggle('active');
+                  element[categoryActive].classList.toggle('active');
+                  categoryActive = event.target.getAttribute('data-id');
+                  renderMenuPriceList(menuData, categoryActive, ourMenuCategory)
+              }
+          })
+      });
+      renderMenuPriceList(menuData, categoryActive, ourMenuCategory)
+  }
+
+  function renderMenuPriceList(menuData, categoryActive, ourMenuCategory) {
+      let menuSelectCategory = menuData.filter(function (data, i) {
+          if (data['food-category'] == ourMenuCategory[categoryActive]) return true
+      })
+      let ourMenuPrice = document.querySelector('.our-menu__category-wrapper');
+      let ourMenuPriceList = "";
+      menuSelectCategory.forEach(function (data, i) {
+          ourMenuPriceList += `
+        <div class="food__wrapper">
+            <div class="food__info">
+                <h4 class="food__title">
+                ${data["food-name"]}
+                </h4>
+                <p class="food__sub-title p-lite">
+                ${data["food-description"]}
+                    <span></span>
+                </p>
+            </div>
+            <p class="food__price">$${data["food-price"]}</p>
+        </div>`
+      });
+      console.log(ourMenuPriceList)
+      ourMenuPrice.innerHTML = ourMenuPriceList;
+  }
