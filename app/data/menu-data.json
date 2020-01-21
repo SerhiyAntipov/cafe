@@ -7,7 +7,6 @@
         "best-price": "no",
         "url": "img/price-slider/img_1.jpg"
     },
-
     {
         "data-id": "2",
         "food-name": "Apple tart fine",
@@ -31,8 +30,8 @@
         "food-name": "Blackberry ice cream sundae",
         "food-description": "Vanilla ice cream with meringue, roasted hazelnuts, blackberry mousse, shortbread and a warm blackberry sauce",
         "food-price": "8.25",
-        "food-category": "desserts",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_4.jpg"
     },
     {
@@ -76,8 +75,8 @@
         "food-name": "Selection of three cheeses",
         "food-description": "Fourme d`Ambert, Cornish Yarg and Camembert from Normandy with pear chutney, rye crackers",
         "food-price": "9.95",
-        "food-category": "desserts",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_9.jpg"
     },
     {
@@ -94,8 +93,8 @@
         "food-name": "Roast pumpkin soup",
         "food-description": "Creamed pumpkin with truffle ricotta, pine nuts and crispy sage",
         "food-price": "6.25",
-        "food-category": "starters",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_11.jpg"
     },
     {
@@ -113,7 +112,7 @@
         "food-description": "Warm crispy duck with five spice dressing, toasted cashews, watermelon, beansprouts, sesame seeds, coriander and ginger",
         "food-price": "8.55",
         "food-category": "starters",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_13.jpg"
     },
     {
@@ -131,7 +130,7 @@
         "food-description": "Black pepper, lemon, and dark rye bread",
         "food-price": "9.75",
         "food-category": "starters",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_15.jpg"
     },
     {
@@ -139,8 +138,8 @@
         "food-name": "The Ivy Cure smoked salmon and crab",
         "food-description": "A quenelle of crab and dill cream, lemon, dark rye bread",
         "food-price": "12.75",
-        "food-category": "starters",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_16.jpg"
     },
     {
@@ -166,8 +165,8 @@
         "food-name": "Laverstoke Park Farm buffalo mozzarella",
         "food-description": "Crispy artichokes, pear and truffle honey",
         "food-price": "12.95",
-        "food-category": "starters",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_19.jpg"
     },
     {
@@ -211,8 +210,8 @@
         "food-name": "Seared Atlantic scallops",
         "food-description": "Cauliflower puree, caper butter, tamarind glaze, apple batons and a golden crumb",
         "food-price": "12.5",
-        "food-category": "starters",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_24.jpg"
     },
     {
@@ -221,7 +220,7 @@
         "food-description": "Slow-braised lamb leg with beef, Wookey Hole Cheddar potato mash",
         "food-price": "14.5",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_25.jpg"
     },
     {
@@ -230,7 +229,7 @@
         "food-description": "Off the bone with crispy skin, smoked aubergine puree, tomatoes, peppers and a Moroccan sauce",
         "food-price": "16.5",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_26.jpg"
     },
     {
@@ -239,7 +238,7 @@
         "food-description": "Crushed pea and herb sauce with a soft poached hen`s egg and baby watercress",
         "food-price": "14.5",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_27.jpg"
     },
     {
@@ -247,7 +246,7 @@
         "food-name": "Keralan sweet potato curry",
         "food-description": "Choy sum, broccoli, coriander and coconut with steamed jasmine rice",
         "food-price": "14.25",
-        "food-category": "mains",
+        "food-category": "best-price",
         "best-price": "yes",
         "url": "img/price-slider/img_28.jpg"
     },
@@ -257,7 +256,7 @@
         "food-description": "Buckwheat, chickpeas, pumpkin seeds, sesame and pomegranate with crumbled feta cheese, harissa sauce and coriander dressing",
         "food-price": "13.5",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_29.jpg"
     },
     {
@@ -266,7 +265,7 @@
         "food-description": "Sprouting broccoli, Champagne and caper cream sauce",
         "food-price": "16.5",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_30.jpg"
     },
     {
@@ -275,7 +274,7 @@
         "food-description": "Traditional battered cod served with mashed peas, thick cut chips and tartare sauce",
         "food-price": "16.99",
         "food-category": "mains",
-        "best-price": "yes",
+        "best-price": "no",
         "url": "img/price-slider/img_31.jpg"
     },
     {
@@ -283,7 +282,7 @@
         "food-name": "Chicken Milanese",
         "food-description": "Brioche-crumbed chicken breast with a fried egg, Parmesan and truffle cream sauce",
         "food-price": "16.75",
-        "food-category": "mains",
+        "food-category": "best-price",
         "best-price": "yes",
         "url": "img/price-slider/img_32.jpg"
     },
@@ -337,8 +336,8 @@
         "food-name": "The Ivy Collection Champagne",
         "food-description": "Champagne, France",
         "food-price": "9.95",
-        "food-category": "drinks",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_38.jpg"
     },
     {
@@ -400,8 +399,8 @@
         "food-name": "Ruby Grapefruit Spritz",
         "food-description": "Pampelle Ruby Grapefruit Aperitif, Lillet Blanc, Fever-Tree Lemon Tonic and Prosecco",
         "food-price": "9",
-        "food-category": "drinks",
-        "best-price": "no",
+        "food-category": "best-price",
+        "best-price": "yes",
         "url": "img/price-slider/img_45.jpg"
     },
     {
@@ -454,8 +453,8 @@
         "food-name": "Chicken Milanese",
         "food-description": "Brioche-crumbed chicken breast with a fried egg, Parmesan and truffle cream sauce",
         "food-price": "25.45",
-        "food-category": "header",
-        "best-price": "no",
+        "food-category": "mains",
+        "best-price": "header",
         "url": "img/header-slider/header-slider_01.jpg"
     },
     {
@@ -463,8 +462,8 @@
         "food-name": "Blackened cod fillet",
         "food-description": "Baked in a banana leaf with a soy and sesame marinade, citrus-pickled fennel, grilled broccoli, chilli and yuzu mayonnaise",
         "food-price": "20.95",
-        "food-category": "header",
-        "best-price": "no",
+        "food-category": "mains",
+        "best-price": "header",
         "url": "img/header-slider/header-slider_02.jpg"
     },
     {
@@ -472,8 +471,8 @@
         "food-name": "Aromatic duck curry",
         "food-description": "Coconut-based Keralan sauce with chilli, choy sum, sweet potato and jasmine rice",
         "food-price": "22.5",
-        "food-category": "header",
-        "best-price": "no",
+        "food-category": "mains",
+        "best-price": "header",
         "url": "img/header-slider/header-slider_03.jpg"
     }
 ]

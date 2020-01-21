@@ -63,7 +63,7 @@
   // filter slider data 
   function headerSliderData(menuData) {
       let headerSliderData = menuData.filter(function (data, i, object) {
-          if (data["food-category"] == 'header') return true
+          if (data["best-price"] == 'header') return true
       })
       renderHeaderSlider(headerSliderData);
   }
@@ -185,7 +185,7 @@
 
 
   // OUR MENU ++++++++++++++++++++++++++++++++++++++++++++++
-  let allMenuBase
+
 
   function ourMenuData(menuData) {
 
@@ -194,20 +194,15 @@
       })
       let ourMenuCategory = Array.from(new Set(foodsCategory));
 
-
-      allMenuBase = [];
-      ourMenuCategory.forEach(function (content, x, object) {
-          allMenuBase.push(menuData.filter(function (content, i, object) {
-              if (content["food-category"] == ourMenuCategory[x]) return true
-          }))
-      })
-      console.log(allMenuBase[0])
-      console.log(ourMenuCategory)
-
-
+      //   let allMenuBase
+      //   allMenuBase = [];
+      //   ourMenuCategory.forEach(function (content, x, object) {
+      //       allMenuBase.push(menuData.filter(function (content, i, object) {
+      //           if (content["food-category"] == ourMenuCategory[x]) return true
+      //       }))
+      //   })
       renderOurMenuList(ourMenuCategory);
   };
-
 
   // Render Our Menu List  ===========================
   function renderOurMenuList(ourMenuCategory) {
@@ -224,27 +219,39 @@
   }
 
 
-  // Our Menu Category Active ===========================
+  // Menu Category Active + Change Menu Category Active ===========================
   function ourMenuCategoryActive(ourMenuCategory) {
       let ourMenuCategoryTitle = document.querySelectorAll('.our-menu__category-title');
-      let categoryActive = "0";
-      ourMenuCategoryTitle.forEach(function (categoryTitle, i, element) {
-          if (categoryTitle.innerText.toLowerCase() == 'mains') {
-              categoryTitle.classList.toggle('active');
-              categoryActive = categoryTitle.getAttribute('data-id');
-          } else {
-              element[categoryActive].classList.toggle('active');
-          }
-          categoryTitle.addEventListener('click', function (event) {
-              if (event.target.classList.length <= 1) {
-                  event.target.classList.toggle('active');
-                  element[categoryActive].classList.toggle('active');
-                  categoryActive = event.target.getAttribute('data-id');
-                  renderMenuPriceList(menuData, categoryActive, ourMenuCategory)
+      let categoryActive = 0;
+
+      //   Category Menu Active 
+      (function categoryMenuActive() {
+          categoryActive = 0;
+          let nameCategoryActive = 'mains';
+
+          ourMenuCategoryTitle.forEach(function (categoryTitle, i) {
+              if (categoryTitle.innerText.toLowerCase() == nameCategoryActive) {
+                  categoryActive = categoryTitle.getAttribute('data-id');
               }
           })
-      });
-      renderMenuPriceList(menuData, categoryActive, ourMenuCategory)
+          ourMenuCategoryTitle[categoryActive].classList.toggle('active');
+      })();
+
+
+      // Change Menu Category Active
+      (function changeMenuCategory() {
+          ourMenuCategoryTitle.forEach(function (categoryTitle, i, element) {
+              categoryTitle.addEventListener('click', function (event) {
+                  if (event.target.classList.contains('active') != true) {
+                      event.target.classList.toggle('active');
+                      element[categoryActive].classList.toggle('active');
+                      categoryActive = event.target.getAttribute('data-id');
+                      renderMenuPriceList(menuData, categoryActive, ourMenuCategory);
+                  }
+              })
+          });
+          renderMenuPriceList(menuData, categoryActive, ourMenuCategory)
+      })();
   }
 
   function renderMenuPriceList(menuData, categoryActive, ourMenuCategory) {
@@ -268,6 +275,5 @@
             <p class="food__price">$${data["food-price"]}</p>
         </div>`
       });
-      console.log(ourMenuPriceList)
       ourMenuPrice.innerHTML = ourMenuPriceList;
   }
