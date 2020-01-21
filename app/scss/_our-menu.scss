@@ -57,6 +57,11 @@
         &__wrapper {
             display: flex;
             align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        &__info {
+            flex-grow: 1;
         }
 
         &__sub-title {
@@ -77,6 +82,7 @@
             font-size: 2.4rem;
             text-transform: uppercase;
             color: $c-mongoose;
+            flex-grow: 0;
         }
     }
 
