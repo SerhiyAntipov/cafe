@@ -572,6 +572,11 @@ p {
   text-align: center;
 }
 
+.best-price p {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
 .price-slider__slide {
   padding: 0 10px;
   box-sizing: border-box;
@@ -801,8 +806,37 @@ p {
   text-align: center;
 }
 
+.reservations p {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
 .collage h2 {
   text-align: center;
+}
+
+.collage .popup-gallery {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.collage .popup-gallery a {
+  display: inline-block;
+  width: 16%;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .collage .popup-gallery a {
+    width: 32%;
+  }
+}
+
+.collage .popup-gallery img {
+  width: 100%;
+  height: auto;
 }
 
 .main-footer {

@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="modules/slick/css/libs-slick-carousel.min.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="modules/magnific-popup.css">
+
+
+
+    <!-- Magnific Popup core JS file -->
+
 </head>
 
 <body>
@@ -95,6 +102,10 @@
         <section class="best-price">
             <h2>Best Price</h2>
             <div class="container">
+                <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla
+                    porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu
+                    erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta
+                    dapibus.</p>
                 <div class="price-slider">
                     <!-- BEST PRICE SLIDER render js -->
                     <!-- <div class="price-slider__slide">
@@ -139,6 +150,10 @@
         <section class="reservations" id="reservations">
             <div class="container">
                 <h2>Book a Table</h2>
+                <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla
+                    porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu
+                    erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta
+                    dapibus.</p>
                 <form action="https://formspree.io/firstasv@gmail.com" method="POST" name="book-form" id="book-form">
                     <div class="book-form__date">
                         <p>Date</p>
@@ -149,6 +164,15 @@
                         <p>Time</p>
                         <input type="time" name="book-time" value="09:00" min="09:00" max="19:00" step="1800"
                             required="">
+                    </div>
+                    <div class="book-form__number-people">
+                        <p>Number of people</p>
+                        <select name="book-table" size="1">
+                            <option selected value="people-1">1 People</option>
+                            <option value="people-2">2 People</option>
+                            <option value="people-3">3 People</option>
+                            <option value="people-4">4 People</option>
+                        </select>
                     </div>
                     <div class="book-form__user-name">
                         <p>Name</p>
@@ -164,6 +188,26 @@
         </section>
         <section class="collage">
             <h2>Collage</h2>
+            <div class="container">
+                <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla
+                    porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu
+                    erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta
+                    dapibus.</p>
+                <div class="popup-gallery">
+                    <a href="img/collage/collage_01.jpg" title="img collage"><img src="img/collage/collage_01.jpg"></a>
+                    <a href="img/collage/collage_02.jpg" title="img collage"><img src="img/collage/collage_02.jpg"></a>
+                    <a href="img/collage/collage_03.jpg" title="img collage"><img src="img/collage/collage_03.jpg"></a>
+                    <a href="img/collage/collage_04.jpg" title="img collage"><img src="img/collage/collage_04.jpg"></a>
+                    <a href="img/collage/collage_05.jpg" title="img collage"><img src="img/collage/collage_05.jpg"></a>
+                    <a href="img/collage/collage_06.jpg" title="img collage"><img src="img/collage/collage_06.jpg"></a>
+                    <a href="img/collage/collage_07.jpg" title="img collage"><img src="img/collage/collage_07.jpg"></a>
+                    <a href="img/collage/collage_08.jpg" title="img collage"><img src="img/collage/collage_08.jpg"></a>
+                    <a href="img/collage/collage_09.jpg" title="img collage"><img src="img/collage/collage_09.jpg"></a>
+                    <a href="img/collage/collage_10.jpg" title="img collage"><img src="img/collage/collage_10.jpg"></a>
+                    <a href="img/collage/collage_11.jpg" title="img collage"><img src="img/collage/collage_11.jpg"></a>
+                    <a href="img/collage/collage_12.jpg" title="img collage"><img src="img/collage/collage_12.jpg"></a>
+                </div>
+            </div>
         </section>
         <footer class="main-footer" id="main-footer">
             <div class="row row justify-content-end"><a href="#wrapper" class="btn-small">Scroll Up</a></div>
@@ -201,7 +245,12 @@
     <script src="modules/bootstrap/js/bootstrap.min.js"></script>
     <script src="modules/slick/js/slick.min.js"></script>
     <script src="modules/smooth-scroll/js/smooth-scroll.min.js"></script>
+
+    <script src="modules/jquery.magnific-popup.min.js"></script>
+
     <script src="js/index.js"></script>
+
+
 </body>
 
 </html>

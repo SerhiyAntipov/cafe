@@ -15,6 +15,11 @@ $c-black-opacity: rgba(20, 23, 35, 0.95);
     h2 {
         text-align: center;
     }
+
+    p {
+        margin-bottom: 25px;
+        color: $c-white;
+    }
 }
 
 .price-slider {
