@@ -2,6 +2,12 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    min-height: 320px;
+    background-color: $c-dark-blue;
+    background: url(../img/header-slider/header-slider_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
 
     .hidden {
         display: none;

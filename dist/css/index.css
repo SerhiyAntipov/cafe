@@ -431,6 +431,12 @@ p {
   width: 100%;
   box-sizing: border-box;
   position: relative;
+  min-height: 320px;
+  background-color: #141723;
+  background: url(../img/header-slider/header-slider_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .slider-header .hidden {
@@ -689,6 +695,11 @@ p {
   font-size: 10px;
 }
 
+.price-slider .slick-list.draggable {
+  min-height: 148px;
+  overflow: hidden;
+}
+
 @-webkit-keyframes btn-scale {
   25% {
     -webkit-transform: scale(1.05);
@@ -823,6 +834,15 @@ p {
   background-color: #4c4d4f;
 }
 
+.reservations .form-section-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 .reservations h2 {
   text-align: center;
 }
@@ -842,30 +862,16 @@ p {
 
 .reservations .btn {
   display: block;
-  margin: 1rem auto 0;
+  margin: 2rem auto 0;
 }
 
-.reservations .form-section-wrapper {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-.reservations .form-section-wrapper:last-child {
-  margin-bottom: 0;
-}
-
-.reservations #book-form {
-  text-align: center;
-}
-
-.reservations #book-form:last-child {
-  margin-top: 0;
+.reservations label {
+  margin: 5px;
 }
 
 .reservations input,
 .reservations select {
   display: block;
-  width: 100%;
   border: none;
   padding: 5px 10px;
   font-size: 1rem;
@@ -880,9 +886,11 @@ p {
   }
 }
 
-.reservations .book-form__date,
-.reservations .book-form__number-people {
-  min-width: 110px;
+@media (max-width: 480px) {
+  .reservations .book-form__user-name,
+  .reservations .book-form__user-phone {
+    width: 45%;
+  }
 }
 
 .reservations .book-form__time {

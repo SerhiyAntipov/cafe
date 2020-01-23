@@ -28,6 +28,9 @@
     if (month < 10) {
         month = "0" + month;
     }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
     let currentDate = year + "-" + month + "-" + day;
     let currentTime = hours + ":" + minutes;
     document.querySelector('.book-date').setAttribute('value', currentDate);

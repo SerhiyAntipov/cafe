@@ -1,6 +1,12 @@
 .reservations {
     background-color: $c-dark-gray;
 
+    .form-section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 
     h2 {
         text-align: center;
@@ -21,30 +27,17 @@
 
     .btn {
         display: block;
-        margin: 1rem auto 0;
+        margin: 2rem auto 0;
     }
 
-    .form-section-wrapper {
-        display: inline-block;
-        margin-bottom: 15px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    #book-form {
-        text-align: center;
-
-        &:last-child {
-            margin-top: 0;
-        }
+    label {
+        margin: 5px;
     }
 
     input,
     select {
         display: block;
-        width: 100%;
+        // width: 100%;
         border: none;
         padding: 5px 10px;
         font-size: 1rem;
@@ -56,9 +49,11 @@
         }
     }
 
-    .book-form__date,
-    .book-form__number-people {
-        min-width: 110px;
+    .book-form__user-name,
+    .book-form__user-phone {
+        @media (max-width: 480px) {
+            width: 45%;
+        }
     }
 
     .book-form__time {
