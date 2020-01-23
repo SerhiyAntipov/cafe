@@ -1,0 +1,20 @@
+#test-modal {
+    iframe {
+        width: 100%;
+        height: calc(100vh - 60px);
+        max-height: 800px;
+    }
+
+    .popup-modal-dismiss {
+        font-family: Raleway;
+        padding: 0.2rem 0.5rem;
+        font-size: 1rem;
+        margin: 10px;
+        background-color: transparent;
+        color: #ffffff;
+        border: 1px solid #bf9e7b;
+        text-decoration: none;
+        display: inline-block;
+        float: right;
+    }
+}

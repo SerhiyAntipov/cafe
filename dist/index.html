@@ -13,14 +13,9 @@
     <link rel="stylesheet" href="modules/normalize/css/normalize.min.css">
     <link rel="stylesheet" href="modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="modules/slick/css/libs-slick-carousel.min.css">
+    <link rel="stylesheet" href="modules/magnific-popup/css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="modules/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/index.css">
-
-    <link rel="stylesheet" href="modules/magnific-popup.css">
-
-
-
-    <!-- Magnific Popup core JS file -->
-
 </head>
 
 <body>
@@ -88,13 +83,13 @@
                         <p>Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia.</p>
                         <h4>ADDRESS:</h4>
                         <p class="p-lite">17 Awesome Street, Belgrade</p>
-                        <p class="p-lite">SR 877900 <button class="btn-small">View Map</button></p>
+                        <p class="p-lite">SR 877900 <a class="popup-modal btn-small" href="#test-modal">View Map</a></p>
                         <h4>OPENING HOURS:</h4>
                         <div class="about__contacts-open">
                             <p class="p-lite">Monday-Friday<span></span>8:00am-11:00pm</p>
                             <p class="p-lite">Saturday-Sunday<span></span>8:00am-10:00pm</p>
                         </div>
-                        <button class="btn btn-transparent">Table Reservation</button>
+                        <a href="#reservations" class="btn btn-transparent">Table Reservation</a>
                     </div>
                 </div>
             </div>
@@ -187,25 +182,37 @@
             </div>
         </section>
         <section class="collage">
-            <h2>Collage</h2>
+            <h2>Photo Gallery</h2>
             <div class="container">
                 <p>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla
                     porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu
                     erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta
                     dapibus.</p>
                 <div class="popup-gallery">
-                    <a href="img/collage/collage_01.jpg" title="img collage"><img src="img/collage/collage_01.jpg"></a>
-                    <a href="img/collage/collage_02.jpg" title="img collage"><img src="img/collage/collage_02.jpg"></a>
-                    <a href="img/collage/collage_03.jpg" title="img collage"><img src="img/collage/collage_03.jpg"></a>
-                    <a href="img/collage/collage_04.jpg" title="img collage"><img src="img/collage/collage_04.jpg"></a>
-                    <a href="img/collage/collage_05.jpg" title="img collage"><img src="img/collage/collage_05.jpg"></a>
-                    <a href="img/collage/collage_06.jpg" title="img collage"><img src="img/collage/collage_06.jpg"></a>
-                    <a href="img/collage/collage_07.jpg" title="img collage"><img src="img/collage/collage_07.jpg"></a>
-                    <a href="img/collage/collage_08.jpg" title="img collage"><img src="img/collage/collage_08.jpg"></a>
-                    <a href="img/collage/collage_09.jpg" title="img collage"><img src="img/collage/collage_09.jpg"></a>
-                    <a href="img/collage/collage_10.jpg" title="img collage"><img src="img/collage/collage_10.jpg"></a>
-                    <a href="img/collage/collage_11.jpg" title="img collage"><img src="img/collage/collage_11.jpg"></a>
-                    <a href="img/collage/collage_12.jpg" title="img collage"><img src="img/collage/collage_12.jpg"></a>
+                    <a href="img/photo-gallery/collage_01.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_01.jpg"></a>
+                    <a href="img/photo-gallery/collage_02.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_02.jpg"></a>
+                    <a href="img/photo-gallery/collage_03.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_03.jpg"></a>
+                    <a href="img/photo-gallery/collage_04.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_04.jpg"></a>
+                    <a href="img/photo-gallery/collage_05.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_05.jpg"></a>
+                    <a href="img/photo-gallery/collage_06.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_06.jpg"></a>
+                    <a href="img/photo-gallery/collage_07.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_07.jpg"></a>
+                    <a href="img/photo-gallery/collage_08.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_08.jpg"></a>
+                    <a href="img/photo-gallery/collage_09.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_09.jpg"></a>
+                    <a href="img/photo-gallery/collage_10.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_10.jpg"></a>
+                    <a href="img/photo-gallery/collage_11.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_11.jpg"></a>
+                    <a href="img/photo-gallery/collage_12.jpg" title="Cafe 'Name'"><img
+                            src="img/photo-gallery/collage_12.jpg"></a>
                 </div>
             </div>
         </section>
@@ -216,7 +223,7 @@
                     <h4>ADDRESS:</h4>
                     <p class="p-lite">17 Awesome Street, Belgrade</p>
                     <p class="p-lite">SR 877900</p>
-                    <button class="btn-small">View Map</button>
+                    <a class="popup-modal btn-small" href="#test-modal">View Map</a>
                 </div>
                 <div class="col-8 col-sm-6 col-md-4 col-lg-5 col-xl-3 text-center footer-col-2">
                     <h4>OPENING HOURS:</h4>
@@ -224,33 +231,41 @@
                         <p class="p-lite">Monday-Friday<span></span>8:00am-11:00pm</p>
                         <p class="p-lite">Saturday-Sunday<span></span>8:00am-10:00pm</p>
                     </div>
-                    <button class="btn-small">Table Reservation</button>
+                    <a href="#reservations" class="btn-small">Table Reservation</a>
                 </div>
                 <div class="col-7 col-sm-4 col-md-3 col-lg-3 col-xl-2 text-center">
                     <h4>WE ARE SOCIAL:</h4>
                     <p class="p-lite">Feel free to check our social</p>
                     <p class="p-lite">media pages</p>
                     <div class="social-links">
-                        <a href="#" class="btn-small">f</a>
-                        <a href="#" class="btn-small">t</a>
-                        <a href="#" class="btn-small">g</a>
-                        <a href="#" class="btn-small">y</a>
+                        <a href="#" class="btn-small"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="btn-small"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" class="btn-small"><i class="fab fa-google-plus-square"></i></a>
+                        <a href="#" class="btn-small"><i class="fab fa-youtube-square"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
+        <!-- popup map window  -->
+        <!-- <a href="#test-modal">View Map</a> -->
+        <div id="test-modal" class="white-popup-block mfp-hide">
+            <a class="popup-modal-dismiss" href="#">Close map</a></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1806.2513278656515!2d24.025364678640663!3d49.8436769741278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1579781929291!5m2!1sru!2sua"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <!-- popup window  -->
     </div>
-
     <script src="modules/jquery/js/jquery.min.js"></script>
     <script src="modules/bootstrap/js/bootstrap.min.js"></script>
     <script src="modules/slick/js/slick.min.js"></script>
     <script src="modules/smooth-scroll/js/smooth-scroll.min.js"></script>
+    <script src="modules/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"> -->
+    <script src="modules/font-awesome/js/5.11.2.all.min.js" crossorigin="anonymous">
+    </script>
 
-    <script src="modules/jquery.magnific-popup.min.js"></script>
-
-    <script src="js/index.js"></script>
-
-
+    <script src="js/libs.js"></script>
 </body>
 
 </html>

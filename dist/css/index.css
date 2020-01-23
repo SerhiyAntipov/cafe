@@ -38,7 +38,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 13px;
   }
@@ -544,6 +544,12 @@ p {
   box-sizing: border-box;
 }
 
+@media (max-width: 575px) {
+  .about__contacts {
+    margin: 15px;
+  }
+}
+
 .about__contacts h4 {
   color: #bf9e7b;
 }
@@ -876,6 +882,39 @@ p {
 
 .main-footer .social-links a {
   margin: 0;
+  padding: 5px 5px 1px;
+  width: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 340px) {
+  .main-footer .social-links a {
+    width: 35px;
+  }
+}
+
+.main-footer .social-links a svg {
+  width: 100%;
+  height: auto;
+}
+
+#test-modal iframe {
+  width: 100%;
+  height: calc(100vh - 60px);
+  max-height: 800px;
+}
+
+#test-modal .popup-modal-dismiss {
+  font-family: Raleway;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  margin: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #bf9e7b;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
 }
 
 .wrapper {
