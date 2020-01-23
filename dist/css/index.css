@@ -550,7 +550,7 @@ p {
 
 @media (max-width: 575px) {
   .about__contacts {
-    margin: 15px;
+    margin: 15px 15px 0;
   }
 }
 
@@ -868,6 +868,15 @@ p {
   .reservations select {
     padding: 5px;
   }
+}
+
+.reservations .book-form__date,
+.reservations .book-form__number-people {
+  min-width: 110px;
+}
+
+.reservations .book-form__time {
+  min-width: 60px;
 }
 
 .collage h2 {

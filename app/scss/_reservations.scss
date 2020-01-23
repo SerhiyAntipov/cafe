@@ -52,4 +52,12 @@
         }
     }
 
+    .book-form__date,
+    .book-form__number-people {
+        min-width: 110px;
+    }
+
+    .book-form__time {
+        min-width: 60px;
+    }
 }
