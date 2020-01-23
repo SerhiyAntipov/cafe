@@ -433,6 +433,10 @@ p {
   position: relative;
 }
 
+.slider-header .hidden {
+  display: none;
+}
+
 .slider-header img {
   width: 100vw;
   height: auto;
