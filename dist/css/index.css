@@ -743,6 +743,12 @@ p {
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  .our-menu__category-title {
+    margin: 0 7px 10px 7px;
+  }
+}
+
 .our-menu__category-title.active {
   opacity: 1;
 }
@@ -973,14 +979,15 @@ p {
 #test-modal .popup-modal-dismiss {
   font-family: Raleway;
   padding: 0.2rem 0.5rem;
-  font-size: 1rem;
-  margin: 10px;
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
   background-color: transparent;
   color: #ffffff;
   border: 1px solid #bf9e7b;
   text-decoration: none;
   display: inline-block;
   float: right;
+  background-color: #0d0e10;
 }
 
 .wrapper {

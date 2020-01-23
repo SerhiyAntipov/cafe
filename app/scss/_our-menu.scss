@@ -27,6 +27,10 @@
         opacity: 0.4;
         cursor: pointer;
 
+        @media (max-width: 480px) {
+            margin: 0 7px 10px 7px;
+        }
+
         &.active {
             opacity: 1;
         }
