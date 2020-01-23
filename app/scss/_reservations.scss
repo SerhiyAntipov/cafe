@@ -6,8 +6,50 @@
         text-align: center;
     }
 
+    h4 {
+        font-size: 1rem;
+    }
+
     p {
         margin-bottom: 25px;
         color: $c-white;
     }
+
+    .btn {
+        display: block;
+        margin: 1rem auto 0;
+    }
+
+    .form-section-wrapper {
+        display: inline-block;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    #book-form {
+        text-align: center;
+
+        &:last-child {
+            margin-top: 0;
+        }
+    }
+
+    input,
+    select {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 5px 10px;
+        font-size: 1rem;
+        color: $c-dark-blue;
+        min-height: 35px;
+
+        @media (max-width: 480px) {
+            padding: 5px;
+        }
+    }
+
 }

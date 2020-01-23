@@ -24,7 +24,7 @@
         text-transform: uppercase;
         color: $c-mongoose;
         text-align: center;
-        opacity: 0.3;
+        opacity: 0.4;
         cursor: pointer;
 
         &.active {
@@ -88,5 +88,10 @@
 
     h2 {
         text-align: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 2rem auto 0;
     }
 }

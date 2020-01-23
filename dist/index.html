@@ -150,34 +150,36 @@
                     laudantium. Delectus libero, eligendi natus ipsum, est et repellendus neque in voluptatibus,
                     accusantium distinctio?.</p>
                 <form action="https://formspree.io/firstasv@gmail.com" method="POST" name="book-form" id="book-form">
-                    <div class="book-form__date">
-                        <p>Date</p>
-                        <input type="date" name="book-date" value="2020-01-01" min="2020-01-01" max="2021-01-01"
-                            required="">
+                    <div class="form-section-wrapper">
+                        <label class="book-form__user-name">
+                            <h4>Name</h4>
+                            <input type="text" name="book-name" placeholder="Your name" required="">
+                        </label>
+                        <label class="book-form__user-phone">
+                            <h4>Phone</h4>
+                            <input type="text" name="book-tel" placeholder="+380509172020" required="">
+                            </labe>
                     </div>
-                    <div class="book-form__time">
-                        <p>Time</p>
-                        <input type="time" name="book-time" value="09:00" min="09:00" max="19:00" step="1800"
-                            required="">
+                    <div class="form-section-wrapper">
+                        <label class="book-form__date">
+                            <h4>Date</h4>
+                            <input type="date" name="book-date" min="2020-01-01" max="2021-01-01" required="">
+                        </label>
+                        <label class="book-form__time">
+                            <h4>Time</h4>
+                            <input type="time" name="book-time" value="09:00" min="09:00" max="19:00" required="">
+                        </label>
+                        <label class="book-form__number-people">
+                            <h4>People</h4>
+                            <select name="book-table" size="1">
+                                <option selected value="people-1">1 People</option>
+                                <option value="people-2">2 People</option>
+                                <option value="people-3">3 People</option>
+                                <option value="people-4">4 People</option>
+                            </select>
+                        </label>
                     </div>
-                    <div class="book-form__number-people">
-                        <p>Number of people</p>
-                        <select name="book-table" size="1">
-                            <option selected value="people-1">1 People</option>
-                            <option value="people-2">2 People</option>
-                            <option value="people-3">3 People</option>
-                            <option value="people-4">4 People</option>
-                        </select>
-                    </div>
-                    <div class="book-form__user-name">
-                        <p>Name</p>
-                        <input type="text" name="book-name" placeholder="Your name" required="">
-                    </div>
-                    <div class="book-form__user-phone">
-                        <p>Phone</p>
-                        <input type="text" name="book-tel" placeholder="+380509172020" required="">
-                    </div>
-                    <button class="btn" type="submit" form="book-form">Table Reservation</button>
+                    <button class="btn" type="submit" form="book-form">Book Table</button>
                 </form>
             </div>
         </section>

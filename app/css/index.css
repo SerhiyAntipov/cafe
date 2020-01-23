@@ -739,7 +739,7 @@ p {
   text-transform: uppercase;
   color: #bf9e7b;
   text-align: center;
-  opacity: 0.3;
+  opacity: 0.4;
   cursor: pointer;
 }
 
@@ -808,6 +808,11 @@ p {
   text-align: center;
 }
 
+.our-menu .btn {
+  display: block;
+  margin: 2rem auto 0;
+}
+
 .reservations {
   background-color: #4c4d4f;
 }
@@ -816,9 +821,53 @@ p {
   text-align: center;
 }
 
+.reservations h4 {
+  font-size: 1rem;
+}
+
 .reservations p {
   margin-bottom: 25px;
   color: #ffffff;
+}
+
+.reservations .btn {
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.reservations .form-section-wrapper {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.reservations .form-section-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.reservations #book-form {
+  text-align: center;
+}
+
+.reservations #book-form:last-child {
+  margin-top: 0;
+}
+
+.reservations input,
+.reservations select {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #141723;
+  min-height: 35px;
+}
+
+@media (max-width: 480px) {
+  .reservations input,
+  .reservations select {
+    padding: 5px;
+  }
 }
 
 .collage h2 {
