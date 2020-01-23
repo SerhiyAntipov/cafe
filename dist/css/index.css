@@ -821,8 +821,12 @@ p {
   text-align: center;
 }
 
-.reservations h4 {
+.reservations span {
   font-size: 1rem;
+  font-family: Raleway;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .reservations p {
