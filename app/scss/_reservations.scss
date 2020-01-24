@@ -2,10 +2,13 @@
     background-color: $c-dark-gray;
 
     .form-section-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         text-align: center;
+    }
+
+    label {
+        vertical-align: bottom;
+        margin: 5px;
+
     }
 
     h2 {
@@ -30,30 +33,38 @@
         margin: 2rem auto 0;
     }
 
-    label {
-        margin: 5px;
-    }
 
     input,
     select {
         display: block;
-        // width: 100%;
+        width: 100%;
         border: none;
         padding: 5px 10px;
         font-size: 1rem;
         color: $c-dark-blue;
-        min-height: 35px;
+        box-sizing: border-box;
 
         @media (max-width: 480px) {
             padding: 5px;
         }
     }
 
-    .book-form__user-name,
-    .book-form__user-phone {
+    .form-first-row {
+        display: inline-block;
+
         @media (max-width: 480px) {
-            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+
+            label {
+                width: 46%;
+            }
         }
+    }
+
+    .form-second-row {
+        display: inline-block;
     }
 
     .book-form__time {

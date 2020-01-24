@@ -1,0 +1,85 @@
+[{
+        "img-id": "1",
+        "img-title": "Restaurant 'Name' photo of the first hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_01.jpg",
+        "img-msrc": "img/photo-gallery/collage_01.jpg"
+    },
+    {
+        "img-id": "2",
+        "img-title": "Restaurant 'Name' photo of the second hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_02.jpg",
+        "img-msrc": "img/photo-gallery/collage_02.jpg"
+    },
+    {
+        "img-id": "3",
+        "img-title": "Restaurant 'Name' photo of the first hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_03.jpg",
+        "img-msrc": "img/photo-gallery/collage_03.jpg"
+    },
+    {
+        "img-id": "4",
+        "img-title": "Restaurant 'Name' photo of the second hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_04.jpg",
+        "img-msrc": "img/photo-gallery/collage_04.jpg"
+    },
+    {
+        "img-id": "5",
+        "img-title": "Restaurant 'Name' photo of the first hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_05.jpg",
+        "img-msrc": "img/photo-gallery/collage_05.jpg"
+    },
+    {
+        "img-id": "6",
+        "img-title": "Restaurant 'Name' photo of the second hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_06.jpg",
+        "img-msrc": "img/photo-gallery/collage_06.jpg"
+    },
+    {
+        "img-id": "7",
+        "img-title": "Restaurant 'Name' photo of the first hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_07.jpg",
+        "img-msrc": "img/photo-gallery/collage_07.jpg"
+    },
+    {
+        "img-id": "8",
+        "img-title": "Restaurant 'Name' photo of the second hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_08.jpg",
+        "img-msrc": "img/photo-gallery/collage_08.jpg"
+    },
+    {
+        "img-id": "9",
+        "img-title": "Restaurant 'Name' photo of the first hall",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_09.jpg",
+        "img-msrc": "img/photo-gallery/collage_09.jpg"
+    },
+    {
+        "img-id": "10",
+        "img-title": "Restaurant 'Name' photo of the lobby",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_10.jpg",
+        "img-msrc": "img/photo-gallery/collage_10.jpg"
+    },
+    {
+        "img-id": "11",
+        "img-title": "Restaurant 'Name' photo of the lobby",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_11.jpg",
+        "img-msrc": "img/photo-gallery/collage_11.jpg"
+    },
+    {
+        "img-id": "12",
+        "img-title": "Restaurant 'Name' photo of the lobby",
+        "img-alt": "Photo restaurant 'Name'",
+        "img-src": "img/photo-gallery/collage_12.jpg",
+        "img-msrc": "img/photo-gallery/collage_12.jpg"
+    }
+]

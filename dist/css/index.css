@@ -688,14 +688,19 @@ p {
 }
 
 .price-slider .slick-dots {
-  bottom: -35px;
+  bottom: -47px;
 }
 
-.price-slider .slick-dots li button:before {
+.price-slider .slick-dots li button::before {
   font-size: 10px;
 }
 
-.price-slider .slick-list.draggable {
+.price-slider .slick-dots .slick-active button:before {
+  opacity: 1;
+  color: #bf9e7b;
+}
+
+.price-slider .slick-dots .slick-list.draggable {
   min-height: 148px;
   overflow: hidden;
 }
@@ -835,12 +840,12 @@ p {
 }
 
 .reservations .form-section-wrapper {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-          justify-content: center;
   text-align: center;
+}
+
+.reservations label {
+  vertical-align: bottom;
+  margin: 5px;
 }
 
 .reservations h2 {
@@ -865,18 +870,15 @@ p {
   margin: 2rem auto 0;
 }
 
-.reservations label {
-  margin: 5px;
-}
-
 .reservations input,
 .reservations select {
   display: block;
+  width: 100%;
   border: none;
   padding: 5px 10px;
   font-size: 1rem;
   color: #141723;
-  min-height: 35px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
@@ -886,11 +888,24 @@ p {
   }
 }
 
+.reservations .form-first-row {
+  display: inline-block;
+}
+
 @media (max-width: 480px) {
-  .reservations .book-form__user-name,
-  .reservations .book-form__user-phone {
-    width: 45%;
+  .reservations .form-first-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
   }
+  .reservations .form-first-row label {
+    width: 46%;
+  }
+}
+
+.reservations .form-second-row {
+  display: inline-block;
 }
 
 .reservations .book-form__time {
@@ -923,6 +938,15 @@ p {
 .collage .popup-gallery img {
   width: 100%;
   height: auto;
+}
+
+.swipe-all {
+  display: block;
+  margin: 15px auto 0;
+}
+
+.swipe-all:hover {
+  color: inherit;
 }
 
 .main-footer {

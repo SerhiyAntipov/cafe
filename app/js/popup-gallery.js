@@ -1,6 +1,6 @@
 //
 //++++++++++++++ POPUP GALERY ++++++++++++++++++++++++++++++++++++++++++++++
-(function () {
+function popupGallery(photoCollageData) {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -18,4 +18,4 @@
             //   }
         }
     });
-})();
+};

@@ -14,6 +14,20 @@
         xhr.open('GET', 'data/menu-data.json', true);
         xhr.send();
     })();
+
+    // get data photo collage from photo-collage-data.json
+    (function getAjaxJsonPhotoCollageData() {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                photoCollageData = JSON.parse(xhr.response);
+                popupGallery(photoCollageData);
+                photoswipe(photoCollageData);
+            }
+        }
+        xhr.open('GET', 'data/photo-collage-data.json', true);
+        xhr.send();
+    })();
 })();
 (function () {
     let temp_date = new Date();
@@ -152,14 +166,58 @@ function renderMenuPriceList(menuData, categoryActive, ourMenuCategory) {
               <span></span>
           </p>
       </div>
-      <p class="food__price">$${data["food-price"]}</p>
+      <p class="food__price">$${Number(data["food-price"]+'00').toFixed(2)}</p>
   </div>`
     });
     ourMenuPrice.innerHTML = ourMenuPriceList;
 }
+// ++++++++++++++ PHOTOSWIPE ++++++++++++++++++++++++++++++++++++++++++++++
+function photoswipe(photoCollageData) {
+    let pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    let items = [];
+    let width = 600;
+    let height = 400;
+
+    for (i = 0; i < photoCollageData.length; i++) {
+        let itemsData = {};
+        itemsData.src = photoCollageData[i]["img-src"];
+        itemsData.w = width;
+        itemsData.h = height;
+        itemsData.msrc = photoCollageData[i]['img-msrc'];
+        itemsData.title = photoCollageData[i]['img-title'];
+        items.push(itemsData)
+    }
+
+    // let items = [{
+    //         src: '../img/photo-gallery/collage_01.jpg',
+    //         w: 600,
+    //         h: 400
+    //     },
+    //     {
+    //         src: '../img/photo-gallery/collage_02.jpg',
+    //         w: 600,
+    //         h: 400
+    //     }
+    // ];
+
+    // define options (if needed)
+    let options = {
+        // optionName: 'option value'
+        // for example:
+        index: 0 // start at first slide
+    };
+
+    // Initializes and opens PhotoSwipe
+    document.querySelector('.swipe-all').addEventListener('click', function () {
+        let gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    })
+};
 //
 //++++++++++++++ POPUP GALERY ++++++++++++++++++++++++++++++++++++++++++++++
-(function () {
+function popupGallery(photoCollageData) {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -177,7 +235,7 @@ function renderMenuPriceList(menuData, categoryActive, ourMenuCategory) {
             //   }
         }
     });
-})();
+};
 //
 //++++++++++++++ POPUP MAP WINDOW ++++++++++++++++++++++++++++++++++++++++++++++
 (function () {

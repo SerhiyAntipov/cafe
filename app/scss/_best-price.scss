@@ -98,14 +98,21 @@
     }
 
     .slick-dots {
-        bottom: -35px;
+        bottom: -47px;
 
-        li button:before {
+        li button::before {
             font-size: 10px;
+
+
+        }
+
+        .slick-active button:before {
+            opacity: 1;
+            color: $c-mongoose;
         }
     }
 
-    .slick-list.draggable {
+    .slick-dots .slick-list.draggable {
         min-height: 148px;
         overflow: hidden;
     }

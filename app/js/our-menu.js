@@ -76,7 +76,7 @@ function renderMenuPriceList(menuData, categoryActive, ourMenuCategory) {
               <span></span>
           </p>
       </div>
-      <p class="food__price">$${data["food-price"]}</p>
+      <p class="food__price">$${Number(data["food-price"]+'00').toFixed(2)}</p>
   </div>`
     });
     ourMenuPrice.innerHTML = ourMenuPriceList;
