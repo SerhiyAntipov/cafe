@@ -1,6 +1,22 @@
 //
 //++++++++++++++ POPUP GALERY ++++++++++++++++++++++++++++++++++++++++++++++
 function popupGallery(photoCollageData) {
+    let popupPhotoGallery = document.querySelector('.popup-gallery');
+    let popupPhotoGallerySlides = '';
+    let maxPhoto = 6;
+
+    if (photoCollageData.length > 0) {
+        for (i = 0; i < photoCollageData.length && i < maxPhoto; i++) {
+            popupPhotoGallerySlides += `
+            <a href="${photoCollageData[i]["img-src"]}" title="${photoCollageData[i]['img-title']}">
+                <img src="${photoCollageData[i]["img-src"]}" alt="${photoCollageData[i]['img-alt']}">
+            </a>`
+        }
+    }
+
+
+    popupPhotoGallery.innerHTML = popupPhotoGallerySlides;
+
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',

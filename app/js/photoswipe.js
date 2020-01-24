@@ -4,19 +4,20 @@ function photoswipe(photoCollageData) {
 
     // build items array
     let items = [];
-    let width = 600;
-    let height = 400;
 
-    for (i = 0; i < photoCollageData.length; i++) {
-        let itemsData = {};
-        itemsData.src = photoCollageData[i]["img-src"];
-        itemsData.w = width;
-        itemsData.h = height;
-        itemsData.msrc = photoCollageData[i]['img-msrc'];
-        itemsData.title = photoCollageData[i]['img-title'];
-        items.push(itemsData)
+    if (photoCollageData.length > 0) {
+        let width = 600;
+        let height = 400;
+        for (i = 0; i < photoCollageData.length; i++) {
+            let itemsData = {};
+            itemsData.src = photoCollageData[i]["img-src"];
+            itemsData.w = width;
+            itemsData.h = height;
+            itemsData.msrc = photoCollageData[i]['img-msrc'];
+            itemsData.title = photoCollageData[i]['img-title'];
+            items.push(itemsData)
+        }
     }
-
     // let items = [{
     //         src: '../img/photo-gallery/collage_01.jpg',
     //         w: 600,
