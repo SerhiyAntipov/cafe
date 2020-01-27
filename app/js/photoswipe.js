@@ -42,4 +42,10 @@ function photoswipe(photoCollageData) {
         let gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     })
+
+    // document.querySelector('.popup-gallery').addEventListener('click', function () {
+    //     let gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    //     gallery.init();
+    // })
+
 };

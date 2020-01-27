@@ -20,6 +20,10 @@
 }
 
 section:not(.slider-header) {
-    padding: 20px 0 40px;
+    padding: 40px 0 50px;
     overflow: hidden;
+
+    @media (max-width: 575px) {
+        padding: 20px 0 35px;
+    }
 }

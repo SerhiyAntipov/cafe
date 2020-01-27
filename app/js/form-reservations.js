@@ -18,5 +18,7 @@
     let currentTime = hours + ":" + minutes;
     document.querySelector('.book-date').setAttribute('value', currentDate);
     document.querySelector('.book-time').setAttribute('value', currentTime);
+    document.querySelector('.book-date').setAttribute('min', currentDate);
+    document.querySelector('.book-time').setAttribute('min', currentTime);
 
 })();

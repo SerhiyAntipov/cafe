@@ -3,7 +3,7 @@
 function popupGallery(photoCollageData) {
     let popupPhotoGallery = document.querySelector('.popup-gallery');
     let popupPhotoGallerySlides = '';
-    let maxPhoto = 6;
+    let maxPhoto = 5;
 
     if (photoCollageData.length > 0) {
         for (i = 0; i < photoCollageData.length && i < maxPhoto; i++) {
@@ -13,7 +13,6 @@ function popupGallery(photoCollageData) {
             </a>`
         }
     }
-
 
     popupPhotoGallery.innerHTML = popupPhotoGallerySlides;
 
