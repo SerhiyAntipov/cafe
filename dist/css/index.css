@@ -819,11 +819,18 @@ p {
 
 .our-menu .food__price {
   padding-left: 30px;
+  padding-bottom: 15px;
   font-size: 2.4rem;
   text-transform: uppercase;
   color: #bf9e7b;
   -webkit-box-flex: 0;
           flex-grow: 0;
+}
+
+@media (max-width: 991px) {
+  .our-menu .food__price {
+    padding-left: 15px;
+  }
 }
 
 .our-menu h2 {
@@ -933,6 +940,12 @@ p {
 .collage .popup-gallery a:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+@media (max-width: 991px) {
+  .collage .popup-gallery {
+    grid-gap: 5px;
+  }
 }
 
 .collage .popup-gallery img {

@@ -1,8 +1,8 @@
 {
-  "name": "Cafe",
+  "name": "cafe",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "Site Cafe",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,5 +28,16 @@
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerhiyAntipov/cafe.git"
+  },
+  "homepage": "https://serhiyantipov.github.io/cafe/dist/index.html",
+  "keywords": [
+    "Cafe",
+    "Restaurant"
+  ]
 }

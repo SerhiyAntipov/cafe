@@ -46,11 +46,39 @@
         minutes = "0" + minutes;
     }
     let currentDate = year + "-" + month + "-" + day;
+    let maxDate = year + 1 + "-" + month + "-" + day;
+
+
+    let formBookDate = document.querySelector('.book-date');
+    formBookDate.setAttribute('value', currentDate);
+    formBookDate.setAttribute('min', currentDate);
+    formBookDate.setAttribute('max', maxDate);
+
     let currentTime = hours + ":" + minutes;
-    document.querySelector('.book-date').setAttribute('value', currentDate);
-    document.querySelector('.book-time').setAttribute('value', currentTime);
-    document.querySelector('.book-date').setAttribute('min', currentDate);
-    document.querySelector('.book-time').setAttribute('min', currentTime);
+    let formBookTime = document.querySelector('.book-time');
+    formBookTime.setAttribute('value', currentTime);
+
+
+    formBookDate.addEventListener('input', function () {
+
+        if (formBookDate.value == currentDate) {
+            formBookTime.setAttribute('min', currentTime);
+            formBookTime.setAttribute('value', currentTime);
+        } else {
+            formBookTime.setAttribute('min', '09:00');
+            formBookTime.setAttribute('value', '10:00');
+        }
+    })
+
+    formBookTime.addEventListener('input', function () {
+
+        if (formBookDate.value == currentDate) {
+            formBookTime.setAttribute('min', currentTime);
+        } else {
+            formBookTime.setAttribute('min', '09:00');
+            formBookTime.setAttribute('value', '10:00');
+        }
+    })
 
 })();
 //
