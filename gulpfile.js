@@ -202,7 +202,7 @@ gulp.task('export', async function () {
   gulp.src('app/fonts/**/*.*').pipe(gulp.dest('dist/fonts'));
   gulp.src('app/data/*.*').pipe(gulp.dest('dist/data'));
   gulp.src('app/img/**/*.*').pipe(gulp.dest('dist/img'));
-  gulp.src('app/modules/**/*.*').pipe(gulp.dest('dist/modules'));
+  // gulp.src('app/modules/**/*.*').pipe(gulp.dest('dist/modules'));
 });
 //====================================================
 
